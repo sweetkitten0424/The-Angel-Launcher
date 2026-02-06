@@ -11,7 +11,7 @@ Please note we have a code of conduct, please follow it in all your interactions
 
 ## Reporting an Issue
 
-If you have an issue with any product/service of ATLauncher, please create an issue in the appropriate GitHub
+If you have an issue with any product/service of The-Angel-Launcher, please create an issue in the appropriate GitHub
 repository.
 
 If there is no appropriate repository for your issue, please speak to any ATLauncher Staff member on our

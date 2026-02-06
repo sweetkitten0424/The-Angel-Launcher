@@ -37,7 +37,7 @@ private Path testStorage;
 
 @Before
 public void setUp() throws Exception {
-    testStorage = temporaryFolder.newFolder("ATLauncherTests").toPath();
+    testStorage = temporaryFolder.newFolder("TALTests").toPath();
 }
 ```
 

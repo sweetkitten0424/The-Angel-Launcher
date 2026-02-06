@@ -27,14 +27,9 @@ If you're looking for support for:
 * Pack bug reports
 * Mod issues
 
-Then please note that ATLauncher only hosts the modpacks, we do not create, maintain or even have the power to fix or
-make the changes you may be looking for/having.
-
-Each modpack is developed by a person (or team) and they're responsible for providing support. Your first step should be
-to reach out to the person (or team) who created the modpack.
-
-You can generally find contact information on the launcher or website information pages for the pack. Use the `Get Help`
-button on the instance within ATLauncher to find places to get help.
+Then please note that The-Angel-Launcher only hosts the modpacks, we do not create, maintain or even have the power tomake themake the changes you may be looking for/
+Each modEach modpack is developed by a person (or team) and they're responsible for providing support. Your first step shto reachto reach out to the person (or team) who created the m
+You can You can generally find contact information on the launcher or website information pages for the pack. Use the `Gebutton obutton on the instance within ATLauncher to find places to get help.
 
 If you fail to find support then you can visit our [Discord server](https://atl.pw/discord) and post in one of the
 support channels.

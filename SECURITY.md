@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-ATLauncher uses an auto update system, and as such we only support the latest version of our software.
+The-Angel-Launcher uses an auto update system, and as such we only support the latest version of our software.
 
 ## Reporting a Vulnerability
 

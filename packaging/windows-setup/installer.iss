@@ -1,4 +1,4 @@
-#define MyAppName "ATLauncher"
+#define MyAppName "The-Angel-Launcher"
 #define MyAppURL "https://atlauncher.com"
 #define MyAppVersion "1.3.0.0"
 
@@ -144,7 +144,7 @@ begin
       // The launcher download must complete
       repeat
         DownloadPage.Clear;
-        DownloadPage.Add('https://download.nodecdn.net/containers/atl/ATLauncher.exe', '{#MyAppName}.exe', '');
+        DownloadPage.Add('https://download.nodecdn.net/containers/atl/The-Angel-Launcher.exe', '{#MyAppName}.exe', '');
         DownloadPage.Show;
         try
           DownloadPage.Download;

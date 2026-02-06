@@ -179,7 +179,7 @@ jar {
             'SplashScreen-Image': '/assets/image/splash-screen.png',
             'Implementation-Title': project.name,
             'Implementation-Version': archiveVersion,
-            'Implementation-Vender': 'ATLauncher',
+            'Implementation-Vender': 'The-Angel-Launcher',
             'Main-Class': 'com.atlauncher.App',
             'Multi-Release': 'true'
         )
