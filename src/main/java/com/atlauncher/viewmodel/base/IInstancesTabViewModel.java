@@ -22,8 +22,8 @@ import java.util.List;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.atlauncher.gui.models.InstanceUIModel;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.gui.models.InstanceUIModel;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
 
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Observable;

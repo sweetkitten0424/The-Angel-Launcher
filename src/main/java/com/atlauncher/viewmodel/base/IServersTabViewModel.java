@@ -22,7 +22,7 @@ import java.util.Optional;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.data.Server;
+import org.lusd1.the_angel_launcher.data.Server;
 
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Observable;

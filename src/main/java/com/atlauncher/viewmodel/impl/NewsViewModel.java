@@ -20,9 +20,9 @@ package com.atlauncher.viewmodel.impl;
 import java.util.List;
 import java.util.Optional;
 
-import com.atlauncher.data.AbstractNews;
-import com.atlauncher.managers.NewsManager;
-import com.atlauncher.viewmodel.base.INewsViewModel;
+import org.lusd1.the_angel_launcher.data.AbstractNews;
+import org.lusd1.the_angel_launcher.managers.NewsManager;
+import org.lusd1.the_angel_launcher.viewmodel.base.INewsViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

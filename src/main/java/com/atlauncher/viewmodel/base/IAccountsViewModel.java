@@ -22,7 +22,7 @@ import java.util.function.Consumer;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
 
 /**
  * The view model for Accounts tab, handles all background activity

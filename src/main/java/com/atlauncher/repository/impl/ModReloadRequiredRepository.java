@@ -17,7 +17,7 @@
  */
 package com.atlauncher.repository.impl;
 
-import com.atlauncher.repository.base.IModReloadRequiredRepository;
+import org.lusd1.the_angel_launcher.repository.base.IModReloadRequiredRepository;
 
 import io.reactivex.rxjava3.subjects.BehaviorSubject;
 import io.reactivex.rxjava3.subjects.Subject;

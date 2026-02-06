@@ -36,7 +36,7 @@ import org.assertj.swing.timing.Timeout;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import com.atlauncher.gui.card.InstanceCard;
+import org.lusd1.the_angel_launcher.gui.card.InstanceCard;
 
 import ui.mocks.MockHelper;
 

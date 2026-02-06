@@ -30,8 +30,8 @@ import java.util.stream.Stream;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Instance;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Instance;
 import com.atlauncher.data.Pack;
 import com.atlauncher.data.PackVersion;
 import com.atlauncher.evnt.listener.SettingsListener;

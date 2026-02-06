@@ -23,12 +23,12 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.gui.dialogs.ChangeSkinDialog;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.viewmodel.base.IAccountsViewModel;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.gui.dialogs.ChangeSkinDialog;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.viewmodel.base.IAccountsViewModel;
 
 public class AccountsViewModel implements IAccountsViewModel {
     @Override

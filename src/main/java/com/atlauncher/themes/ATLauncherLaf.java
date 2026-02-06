@@ -30,10 +30,10 @@ import javax.swing.JComponent;
 import javax.swing.JMenu;
 import javax.swing.JPopupMenu;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Language;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Resources;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Language;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Resources;
 import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatDarkLaf;
 import com.formdev.flatlaf.FlatIntelliJLaf;

@@ -30,8 +30,8 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
 import com.atlauncher.constants.Constants;
 import com.atlauncher.data.DisableableMod;
 import com.atlauncher.data.Instance;
