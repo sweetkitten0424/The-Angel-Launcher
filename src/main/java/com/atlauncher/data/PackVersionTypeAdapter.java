@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.lang.reflect.Type;
 
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;
 import com.google.gson.JsonElement;

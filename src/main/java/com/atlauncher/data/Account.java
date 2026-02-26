@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -23,9 +23,9 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-import com.atlauncher.gui.tabs.InstancesTab;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.gui.tabs.InstancesTab;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * This class deals with the Accounts in the launcher.

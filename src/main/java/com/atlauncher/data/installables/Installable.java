@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.installables;
+package org.lusd1.the_angel_launcher.data.installables;
 
 import java.awt.BorderLayout;
 import java.awt.Dialog.ModalityType;
@@ -35,25 +35,25 @@ import javax.swing.JProgressBar;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.PackVersion;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifest;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.data.multimc.MultiMCManifest;
-import com.atlauncher.data.technic.TechnicModpack;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.ServerManager;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.PackVersion;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCManifest;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpack;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.ServerManager;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 public abstract class Installable {
     public String instanceName;

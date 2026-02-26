@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt.manager;
+package org.lusd1.the_angel_launcher.evnt.manager;
 
 import javax.annotation.Nonnull;
 
-import com.atlauncher.data.ConsoleState;
+import org.lusd1.the_angel_launcher.data.ConsoleState;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;

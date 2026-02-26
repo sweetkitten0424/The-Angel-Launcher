@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -34,12 +34,12 @@ import javax.swing.border.TitledBorder;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.gui.components.ImagePanel;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.gui.components.ImagePanel;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * Class for displaying packs in the Pack Tab.

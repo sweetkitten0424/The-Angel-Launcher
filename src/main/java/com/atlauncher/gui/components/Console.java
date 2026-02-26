@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.Color;
 
@@ -35,7 +35,7 @@ import javax.swing.text.StyledEditorKit;
 import javax.swing.text.View;
 import javax.swing.text.ViewFactory;
 
-import com.atlauncher.App;
+import org.lusd1.the_angel_launcher.App;
 
 public final class Console extends JTextPane {
     private final SimpleAttributeSet attrs = new SimpleAttributeSet();

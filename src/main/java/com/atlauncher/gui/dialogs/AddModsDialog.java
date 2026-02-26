@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -44,38 +44,38 @@ import javax.swing.event.HyperlinkEvent;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.AddModRestriction;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.ModPlatform;
-import com.atlauncher.data.curseforge.CurseForgeCategoryForGame;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthCategory;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthSearchHit;
-import com.atlauncher.data.modrinth.ModrinthSearchResult;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.gui.card.CurseForgeProjectCard;
-import com.atlauncher.gui.card.ModrinthSearchHitCard;
-import com.atlauncher.gui.layouts.WrapLayout;
-import com.atlauncher.gui.panels.LoadingPanel;
-import com.atlauncher.gui.panels.NoCurseModsPanel;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.AddModRestriction;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.ModPlatform;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeCategoryForGame;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthCategory;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSearchHit;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSearchResult;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.gui.card.CurseForgeProjectCard;
+import org.lusd1.the_angel_launcher.gui.card.ModrinthSearchHitCard;
+import org.lusd1.the_angel_launcher.gui.layouts.WrapLayout;
+import org.lusd1.the_angel_launcher.gui.panels.LoadingPanel;
+import org.lusd1.the_angel_launcher.gui.panels.NoCurseModsPanel;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.formdev.flatlaf.icons.FlatSearchIcon;
 
 public final class AddModsDialog extends JDialog {

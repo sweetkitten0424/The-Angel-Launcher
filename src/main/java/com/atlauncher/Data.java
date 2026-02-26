@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.atlauncher.data.LWJGLVersions;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.LWJGLVersions;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
 
 public final class Data {
 

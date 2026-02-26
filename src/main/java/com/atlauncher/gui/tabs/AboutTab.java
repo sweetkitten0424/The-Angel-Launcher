@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 import java.awt.Component;
 import java.awt.Cursor;
@@ -46,18 +46,18 @@ import javax.swing.event.HyperlinkEvent;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Contributor;
-import com.atlauncher.gui.components.BackgroundImageLabel;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.themes.ATLauncherLaf;
-import com.atlauncher.utils.OS;
-import com.atlauncher.viewmodel.base.IAboutTabViewModel;
-import com.atlauncher.viewmodel.impl.AboutTabViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Contributor;
+import org.lusd1.the_angel_launcher.gui.components.BackgroundImageLabel;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.themes.ATLauncherLaf;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.viewmodel.base.IAboutTabViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.AboutTabViewModel;
 
 /**
  * The about tab displays to the user some basic information in regard to the current state of ATLauncher, and some

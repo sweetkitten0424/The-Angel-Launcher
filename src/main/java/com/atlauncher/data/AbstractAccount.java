@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,16 +31,16 @@ import javax.swing.ImageIcon;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.gui.tabs.InstancesTab;
-import com.atlauncher.gui.tabs.ServersTab;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.utils.SkinUtils;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.gui.tabs.InstancesTab;
+import org.lusd1.the_angel_launcher.gui.tabs.ServersTab;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.utils.SkinUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * This class deals with the Accounts in the launcher.

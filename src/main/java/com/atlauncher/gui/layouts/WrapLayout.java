@@ -1,5 +1,5 @@
 // from http://www.camick.com/java/source/WrapLayout.java
-package com.atlauncher.gui.layouts;
+package org.lusd1.the_angel_launcher.gui.layouts;
 
 import java.awt.Component;
 import java.awt.Container;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -41,9 +41,9 @@ import javax.swing.table.DefaultTableModel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.viewmodel.impl.settings.EnvironmentVariablesViewModel;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.EnvironmentVariablesViewModel;
 import com.formdev.flatlaf.ui.FlatScrollPaneBorder;
 
 public class EnvironmentVariablesTab extends AbstractSettingsTab {

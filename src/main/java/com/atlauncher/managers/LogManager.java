@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.CharArrayWriter;
 import java.io.PrintStream;
@@ -25,14 +25,14 @@ import java.util.concurrent.BlockingQueue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.evnt.LogEvent;
-import com.atlauncher.evnt.LogEvent.LogType;
-import com.atlauncher.exceptions.LocalException;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.network.ErrorReporting;
-import com.atlauncher.thread.LoggingThread;
-import com.atlauncher.utils.SystemOutInterceptor;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.evnt.LogEvent;
+import org.lusd1.the_angel_launcher.evnt.LogEvent.LogType;
+import org.lusd1.the_angel_launcher.exceptions.LocalException;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.network.ErrorReporting;
+import org.lusd1.the_angel_launcher.thread.LoggingThread;
+import org.lusd1.the_angel_launcher.utils.SystemOutInterceptor;
 
 public final class LogManager {
     private static final BlockingQueue<LogEvent> queue = new ArrayBlockingQueue<>(128);

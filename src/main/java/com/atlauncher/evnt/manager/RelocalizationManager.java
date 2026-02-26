@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt.manager;
+package org.lusd1.the_angel_launcher.evnt.manager;
 
-import com.atlauncher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.disposables.Disposable;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -44,29 +44,29 @@ import javax.swing.event.HyperlinkEvent;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.Gsons;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.microsoft.Entitlements;
-import com.atlauncher.data.microsoft.LoginResponse;
-import com.atlauncher.data.microsoft.OauthDeviceCodeResponse;
-import com.atlauncher.data.microsoft.OauthDeviceCodeTokenError;
-import com.atlauncher.data.microsoft.OauthTokenResponse;
-import com.atlauncher.data.microsoft.Profile;
-import com.atlauncher.data.microsoft.XboxLiveAuthErrorResponse;
-import com.atlauncher.data.microsoft.XboxLiveAuthResponse;
-import com.atlauncher.gui.panels.LoadingPanel;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.MicrosoftAuthAPI;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.microsoft.Entitlements;
+import org.lusd1.the_angel_launcher.data.microsoft.LoginResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthDeviceCodeResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthDeviceCodeTokenError;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthTokenResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.Profile;
+import org.lusd1.the_angel_launcher.data.microsoft.XboxLiveAuthErrorResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.XboxLiveAuthResponse;
+import org.lusd1.the_angel_launcher.gui.panels.LoadingPanel;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.MicrosoftAuthAPI;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 import net.freeutils.httpserver.HTTPServer;
 import net.freeutils.httpserver.HTTPServer.VirtualHost;

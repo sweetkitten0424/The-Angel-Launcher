@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.forge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.forge;
 
 import java.io.File;
 import java.io.IOException;
@@ -27,14 +27,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.data.minecraft.ArgumentRule;
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.data.minecraft.ArgumentRule;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels;
+package org.lusd1.the_angel_launcher.gui.panels;
 
 import java.awt.Component;
 
@@ -26,7 +26,7 @@ import javax.swing.JPanel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class LoadingPanel extends JPanel {
     public LoadingPanel() {

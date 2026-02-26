@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -32,18 +32,18 @@ import javax.swing.border.TitledBorder;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.curseforge.CurseForgeAttachment;
-import com.atlauncher.data.curseforge.CurseForgeFileDependency;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.gui.dialogs.CurseForgeProjectFileSelectorDialog;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.BackgroundImageWorker;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeAttachment;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFileDependency;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.gui.dialogs.CurseForgeProjectFileSelectorDialog;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.BackgroundImageWorker;
 
 public final class CurseForgeFileDependencyCard extends JPanel {
     private final CurseForgeProjectFileSelectorDialog parent;

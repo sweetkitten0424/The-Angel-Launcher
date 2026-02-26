@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.workers;
+package org.lusd1.the_angel_launcher.workers;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -29,9 +29,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.SwingWorker;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.DownloadException;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.DownloadException;
 
 public class BackgroundImageWorker extends SwingWorker<ImageIcon, Object> {
     private final JLabel label;

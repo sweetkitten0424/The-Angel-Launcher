@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -48,30 +48,30 @@ import javax.swing.UIManager;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.Server;
-import com.atlauncher.data.curseforge.CurseForgeFingerprint;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.gui.components.ModsJCheckBox;
-import com.atlauncher.gui.handlers.ModsJCheckBoxTransferHandler;
-import com.atlauncher.gui.layouts.WrapLayout;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprint;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.gui.components.ModsJCheckBox;
+import org.lusd1.the_angel_launcher.gui.handlers.ModsJCheckBoxTransferHandler;
+import org.lusd1.the_angel_launcher.gui.layouts.WrapLayout;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class EditModsDialog extends JDialog {
     private static final long serialVersionUID = 7004414192679481818L;
@@ -245,9 +245,9 @@ public class EditModsDialog extends JDialog {
                     boolean reload = false;
                     for (File file : files) {
                         String typeTemp = fcd.getSelectorValue();
-                        com.atlauncher.data.Type type = null;
+                        org.lusd1.the_angel_launcher.data.Type type = null;
                         if (typeTemp.equalsIgnoreCase("Mods Folder")) {
-                            type = com.atlauncher.data.Type.mods;
+                            type = org.lusd1.the_angel_launcher.data.Type.mods;
                         } else if (typeTemp.equalsIgnoreCase("Inside Minecraft.jar")) {
                             int ret = DialogManager.yesNoDialog().setTitle(GetText.tr("Add As Mod?"))
                                     .setContent(new HTMLBuilder().text(GetText.tr(
@@ -256,18 +256,18 @@ public class EditModsDialog extends JDialog {
                                     .setType(DialogManager.WARNING).show();
 
                             if (ret != 0) {
-                                type = com.atlauncher.data.Type.jar;
+                                type = org.lusd1.the_angel_launcher.data.Type.jar;
                             } else {
-                                type = com.atlauncher.data.Type.mods;
+                                type = org.lusd1.the_angel_launcher.data.Type.mods;
                             }
                         } else if (typeTemp.equalsIgnoreCase("CoreMods Mod")) {
-                            type = com.atlauncher.data.Type.coremods;
+                            type = org.lusd1.the_angel_launcher.data.Type.coremods;
                         } else if (typeTemp.equalsIgnoreCase("Texture Pack")) {
-                            type = com.atlauncher.data.Type.texturepack;
+                            type = org.lusd1.the_angel_launcher.data.Type.texturepack;
                         } else if (typeTemp.equalsIgnoreCase("Resource Pack")) {
-                            type = com.atlauncher.data.Type.resourcepack;
+                            type = org.lusd1.the_angel_launcher.data.Type.resourcepack;
                         } else if (typeTemp.equalsIgnoreCase("Shader Pack")) {
-                            type = com.atlauncher.data.Type.shaderpack;
+                            type = org.lusd1.the_angel_launcher.data.Type.shaderpack;
                         }
                         if (type != null) {
                             DisableableMod mod = DisableableMod.generateMod(file, type,
@@ -352,7 +352,7 @@ public class EditModsDialog extends JDialog {
 
     private void loadMods() {
         List<DisableableMod> mods = instanceOrServer.getMods().stream().filter(DisableableMod::wasSelected)
-                .filter(m -> !m.skipped && m.type != com.atlauncher.data.Type.worlds)
+                .filter(m -> !m.skipped && m.type != org.lusd1.the_angel_launcher.data.Type.worlds)
                 .sorted(Comparator.comparing(m -> m.name, String.CASE_INSENSITIVE_ORDER)).collect(Collectors.toList());
         enabledMods = new ArrayList<>();
         disabledMods = new ArrayList<>();

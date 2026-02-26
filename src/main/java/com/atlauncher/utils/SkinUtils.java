@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.awt.Graphics;
 import java.awt.Image;
@@ -26,7 +26,7 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public class SkinUtils {
     public static ImageIcon getDefaultHead() {

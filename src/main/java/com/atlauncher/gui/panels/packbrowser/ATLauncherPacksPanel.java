@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels.packbrowser;
+package org.lusd1.the_angel_launcher.gui.panels.packbrowser;
 
 import java.awt.GridBagConstraints;
 import java.util.ArrayList;
@@ -31,14 +31,14 @@ import javax.swing.JPanel;
 import org.joda.time.format.ISODateTimeFormat;
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.gui.card.NilCard;
-import com.atlauncher.gui.card.packbrowser.ATLauncherPackCard;
-import com.atlauncher.managers.PackManager;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.gui.card.NilCard;
+import org.lusd1.the_angel_launcher.gui.card.packbrowser.ATLauncherPackCard;
+import org.lusd1.the_angel_launcher.managers.PackManager;
 
 public class ATLauncherPacksPanel extends PackBrowserPlatformPanel {
     private final List<Pack> packs = new ArrayList<>();

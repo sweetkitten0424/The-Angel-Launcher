@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -32,18 +32,18 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import com.atlauncher.App;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.analytics.AnalyticsApiResponse;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsApiResponse;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 import okhttp3.Call;
 import okhttp3.Callback;

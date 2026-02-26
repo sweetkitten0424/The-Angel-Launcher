@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.dbus;
+package org.lusd1.the_angel_launcher.dbus;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -27,7 +27,7 @@ import java.util.UUID;
 import java.util.concurrent.LinkedTransferQueue;
 import java.util.concurrent.TransferQueue;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 import org.freedesktop.dbus.DBusMap;
 import org.freedesktop.dbus.DBusMatchRule;

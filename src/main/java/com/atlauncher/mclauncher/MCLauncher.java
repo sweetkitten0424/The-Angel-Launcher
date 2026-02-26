@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.mclauncher;
+package org.lusd1.the_angel_launcher.mclauncher;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,21 +32,21 @@ import java.util.stream.Stream;
 
 import org.lusd1.the_angel_launcher.App;
 import org.lusd1.the_angel_launcher.FileSystem;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.QuickPlayOption;
-import com.atlauncher.data.json.QuickPlay;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.LoggingClient;
-import com.atlauncher.managers.LWJGLManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.ErrorReporting;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.QuickPlayOption;
+import org.lusd1.the_angel_launcher.data.json.QuickPlay;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.LoggingClient;
+import org.lusd1.the_angel_launcher.managers.LWJGLManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.ErrorReporting;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class MCLauncher {
     public static final List<String> IGNORED_ARGUMENTS = Arrays.asList("--clientId", "${clientid}", "--xuid",
@@ -234,7 +234,7 @@ public class MCLauncher {
                 ? LWJGLManager.getReplacementLWJGL3Library(instance, l)
                 : l)
             .forEach(library -> {
-                com.atlauncher.data.minecraft.Download download = library.getNativeDownloadForOS();
+                org.lusd1.the_angel_launcher.data.minecraft.Download download = library.getNativeDownloadForOS();
 
                 cpb.append(FileSystem.LIBRARIES.resolve(download.path).toFile().getAbsolutePath());
                 cpb.append(File.pathSeparator);
@@ -384,7 +384,7 @@ public class MCLauncher {
         }
 
         if (instance.usesLegacyLaunch()) {
-            arguments.add("com.atlauncher.mclauncher.legacy.LegacyMCLauncher");
+            arguments.add("org.lusd1.the_angel_launcher.mclauncher.legacy.LegacyMCLauncher");
             // Start or passed in arguments
             arguments.add(instance.getRootDirectory().getAbsolutePath()); // Path
             arguments.add(username); // Username

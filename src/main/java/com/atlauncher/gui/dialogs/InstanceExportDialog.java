@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -45,18 +45,18 @@ import javax.swing.JTextField;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.InstanceExportFormat;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.WindowUtils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.InstanceExportFormat;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.WindowUtils;
 
 public class InstanceExportDialog extends JDialog {
     private final Instance instance;

@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.ftb.FTBPackList;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.ftb.FTBPackVersionModsManifest;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackList;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionModsManifest;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 
 import okhttp3.CacheControl;
 

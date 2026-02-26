@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.repository.impl;
+package org.lusd1.the_angel_launcher.repository.impl;
 
 import org.lusd1.the_angel_launcher.repository.base.IModReloadRequiredRepository;
 

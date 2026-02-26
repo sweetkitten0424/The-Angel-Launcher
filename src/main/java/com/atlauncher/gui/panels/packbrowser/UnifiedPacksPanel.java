@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels.packbrowser;
+package org.lusd1.the_angel_launcher.gui.panels.packbrowser;
 
 import java.awt.GridBagConstraints;
 import java.util.ArrayList;
@@ -28,16 +28,16 @@ import javax.swing.JPanel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.graphql.UnifiedModPackHomeQuery;
-import com.atlauncher.graphql.UnifiedModPackSearchQuery;
-import com.atlauncher.graphql.fragment.UnifiedModPackResultsFragment;
-import com.atlauncher.gui.card.NilCard;
-import com.atlauncher.gui.card.packbrowser.UnifiedPackCard;
-import com.atlauncher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.graphql.UnifiedModPackHomeQuery;
+import org.lusd1.the_angel_launcher.graphql.UnifiedModPackSearchQuery;
+import org.lusd1.the_angel_launcher.graphql.fragment.UnifiedModPackResultsFragment;
+import org.lusd1.the_angel_launcher.gui.card.NilCard;
+import org.lusd1.the_angel_launcher.gui.card.packbrowser.UnifiedPackCard;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
 
 public class UnifiedPacksPanel extends PackBrowserPlatformPanel {
     GridBagConstraints gbc = new GridBagConstraints();

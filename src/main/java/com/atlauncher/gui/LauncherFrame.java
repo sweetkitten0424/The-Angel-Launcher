@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -34,31 +34,31 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.WindowConstants;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Pack;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.evnt.manager.TabChangeManager;
-import com.atlauncher.gui.components.LauncherBottomBar;
-import com.atlauncher.gui.dialogs.InstanceInstallerDialog;
-import com.atlauncher.gui.tabs.AboutTab;
-import com.atlauncher.gui.tabs.CreatePackTab;
-import com.atlauncher.gui.tabs.InstancesTab;
-import com.atlauncher.gui.tabs.PacksBrowserTab;
-import com.atlauncher.gui.tabs.ServersTab;
-import com.atlauncher.gui.tabs.SettingsTab;
-import com.atlauncher.gui.tabs.Tab;
-import com.atlauncher.gui.tabs.accounts.AccountsTab;
-import com.atlauncher.gui.tabs.news.NewsTab;
-import com.atlauncher.gui.tabs.tools.ToolsTab;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.evnt.manager.TabChangeManager;
+import org.lusd1.the_angel_launcher.gui.components.LauncherBottomBar;
+import org.lusd1.the_angel_launcher.gui.dialogs.InstanceInstallerDialog;
+import org.lusd1.the_angel_launcher.gui.tabs.AboutTab;
+import org.lusd1.the_angel_launcher.gui.tabs.CreatePackTab;
+import org.lusd1.the_angel_launcher.gui.tabs.InstancesTab;
+import org.lusd1.the_angel_launcher.gui.tabs.PacksBrowserTab;
+import org.lusd1.the_angel_launcher.gui.tabs.ServersTab;
+import org.lusd1.the_angel_launcher.gui.tabs.SettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.Tab;
+import org.lusd1.the_angel_launcher.gui.tabs.accounts.AccountsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.news.NewsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.tools.ToolsTab;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public final class LauncherFrame extends JFrame implements RelocalizationListener {
     public JTabbedPane tabbedPane;

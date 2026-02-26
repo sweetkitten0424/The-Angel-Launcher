@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.Graphics;
 import java.awt.SystemTray;
@@ -30,9 +30,9 @@ import javax.swing.JWindow;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * The splash screen which shows when the launcher is started up and is loading it's stuff.

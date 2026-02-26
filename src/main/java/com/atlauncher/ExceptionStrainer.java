@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public final class ExceptionStrainer implements Thread.UncaughtExceptionHandler {
     @Override

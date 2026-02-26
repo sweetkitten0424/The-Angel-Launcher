@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.text.SimpleDateFormat;
 
-import com.atlauncher.App;
-import com.atlauncher.graphql.GetNewsQuery.GeneralNew;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.graphql.GetNewsQuery.GeneralNew;
 
 /**
  * Because there are two types of news in ATLauncher, but are used for the same purpose, this is a combing class.

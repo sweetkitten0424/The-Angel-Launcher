@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,20 +24,20 @@ import java.util.Optional;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.data.microsoft.Entitlements;
-import com.atlauncher.data.microsoft.LoginResponse;
-import com.atlauncher.data.microsoft.OauthDeviceCodeResponse;
-import com.atlauncher.data.microsoft.OauthTokenResponse;
-import com.atlauncher.data.microsoft.Profile;
-import com.atlauncher.data.microsoft.XboxLiveAuthResponse;
-import com.atlauncher.gui.dialogs.CreateMinecraftProfileDialog;
-import com.atlauncher.gui.dialogs.LoginWithMicrosoftDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.utils.MicrosoftAuthAPI;
+import org.lusd1.the_angel_launcher.data.microsoft.Entitlements;
+import org.lusd1.the_angel_launcher.data.microsoft.LoginResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthDeviceCodeResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthTokenResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.Profile;
+import org.lusd1.the_angel_launcher.data.microsoft.XboxLiveAuthResponse;
+import org.lusd1.the_angel_launcher.gui.dialogs.CreateMinecraftProfileDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.LoginWithMicrosoftDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.utils.MicrosoftAuthAPI;
 
 public class MicrosoftAccount extends AbstractAccount {
     /**

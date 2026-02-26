@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.forge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.forge;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,12 +31,12 @@ import java.util.Map.Entry;
 import java.util.jar.Attributes;
 import java.util.jar.JarFile;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.annot.Json;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 @Json
 public class Processor {

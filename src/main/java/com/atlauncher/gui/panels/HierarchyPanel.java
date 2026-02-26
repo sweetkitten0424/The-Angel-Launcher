@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels;
+package org.lusd1.the_angel_launcher.gui.panels;
 
 import java.awt.LayoutManager;
 import java.awt.event.HierarchyEvent;
@@ -24,10 +24,10 @@ import java.awt.event.HierarchyListener;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
 
 import io.reactivex.rxjava3.disposables.CompositeDisposable;
 import io.reactivex.rxjava3.disposables.Disposable;

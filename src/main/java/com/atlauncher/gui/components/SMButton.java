@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.Cursor;
 
@@ -24,8 +24,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JToolTip;
 
-import com.atlauncher.gui.HoverLineBorder;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.gui.HoverLineBorder;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class SMButton extends JButton {
     private static final Cursor hand = new Cursor(Cursor.HAND_CURSOR);

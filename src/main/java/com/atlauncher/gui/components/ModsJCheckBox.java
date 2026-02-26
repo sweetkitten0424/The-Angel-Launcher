@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -27,21 +27,21 @@ import javax.swing.JToolTip;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.ModPlatform;
-import com.atlauncher.data.Type;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.curseforge.CurseForgeSocialLinkType;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.data.modrinth.ModrinthDonationUrl;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.gui.HoverLineBorder;
-import com.atlauncher.gui.dialogs.EditModsDialog;
-import com.atlauncher.gui.dialogs.ModsChooser;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.ModPlatform;
+import org.lusd1.the_angel_launcher.data.Type;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeSocialLinkType;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthDonationUrl;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.gui.HoverLineBorder;
+import org.lusd1.the_angel_launcher.gui.dialogs.EditModsDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ModsChooser;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * This class extends {@link JCheckBox} and overrides the need to use JCheckBox
@@ -53,7 +53,7 @@ import com.atlauncher.utils.Utils;
 public class ModsJCheckBox extends JCheckBox {
     /**
      * The mod this object will use to display it's data. Will be type {@link Mod},
-     * {@link com.atlauncher.data.json.Mod} or {@link DisableableMod}.
+     * {@link org.lusd1.the_angel_launcher.data.json.Mod} or {@link DisableableMod}.
      */
     private final Object mod;
 

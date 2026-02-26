@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -161,18 +161,18 @@ public class GeneralSettingsViewModel implements SettingsListener {
     public List<LauncherTheme> getThemes() {
         if (themes == null)
             themes = Arrays.asList(
-                    new LauncherTheme("com.atlauncher.themes.Dark", "ATLauncher Dark (default)"),
-                    new LauncherTheme("com.atlauncher.themes.Light", "ATLauncher Light"),
-                    new LauncherTheme("com.atlauncher.themes.MonokaiPro", "Monokai Pro"),
-                    new LauncherTheme("com.atlauncher.themes.DraculaContrast", "Dracula Contrast"),
-                    new LauncherTheme("com.atlauncher.themes.HiberbeeDark", "Hiberbee Dark"),
-                    new LauncherTheme("com.atlauncher.themes.Vuesion", "Vuesion"),
-                    new LauncherTheme("com.atlauncher.themes.MaterialPalenightContrast", "Material Palenight Contrast"),
-                    new LauncherTheme("com.atlauncher.themes.ArcOrange", "Arc Orange"),
-                    new LauncherTheme("com.atlauncher.themes.CyanLight", "Cyan Light"),
-                    new LauncherTheme("com.atlauncher.themes.HighTechDarkness", "High Tech Darkness"),
-                    new LauncherTheme("com.atlauncher.themes.OneDark", "One Dark"),
-                    new LauncherTheme("com.atlauncher.themes.Tokyonight", "TokyoNight"));
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Dark", "ATLauncher Dark (default)"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Light", "ATLauncher Light"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.MonokaiPro", "Monokai Pro"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.DraculaContrast", "Dracula Contrast"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.HiberbeeDark", "Hiberbee Dark"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Vuesion", "Vuesion"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.MaterialPalenightContrast", "Material Palenight Contrast"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.ArcOrange", "Arc Orange"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.CyanLight", "Cyan Light"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.HighTechDarkness", "High Tech Darkness"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.OneDark", "One Dark"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Tokyonight", "TokyoNight"));
         return themes;
     }
 

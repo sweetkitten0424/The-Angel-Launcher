@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt;
+package org.lusd1.the_angel_launcher.evnt;
 
 import java.awt.Color;
 
@@ -23,11 +23,11 @@ import javax.swing.UIManager;
 
 import org.apache.logging.log4j.Logger;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.gui.components.Console;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Timestamper;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.gui.components.Console;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Timestamper;
 
 public final class LogEvent {
     public static final int CONSOLE = 0xA;

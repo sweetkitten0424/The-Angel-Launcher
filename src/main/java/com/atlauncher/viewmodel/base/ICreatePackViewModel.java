@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.base;
+package org.lusd1.the_angel_launcher.viewmodel.base;
 
 import java.awt.Font;
 import java.util.List;

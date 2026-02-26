@@ -6,9 +6,9 @@ plugins {
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-group = 'com.atlauncher'
+group = 'org.lusd1.the_angel_launcher'
 version = rootProject.file('src/main/resources/version').text.trim().replace('.Beta', '')
 
 application {
-    mainClass = 'com.atlauncher.mclauncher.legacy.LegacyMCLauncher'
+    mainClass = 'org.lusd1.the_angel_launcher.mclauncher.legacy.LegacyMCLauncher'
 }

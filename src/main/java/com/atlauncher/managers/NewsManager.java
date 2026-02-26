@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.util.Collections;
 import java.util.List;
@@ -28,9 +28,9 @@ import com.apollographql.apollo.ApolloCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.api.cache.http.HttpCachePolicy;
 import com.apollographql.apollo.exception.ApolloException;
-import com.atlauncher.data.AbstractNews;
-import com.atlauncher.graphql.GetNewsQuery;
-import com.atlauncher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.data.AbstractNews;
+import org.lusd1.the_angel_launcher.graphql.GetNewsQuery;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;

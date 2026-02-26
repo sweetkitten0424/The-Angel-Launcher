@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifest;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.ftb.FTBPackVersionManifest;
-import com.atlauncher.data.json.Java;
-import com.atlauncher.data.json.QuickPlay;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.data.multimc.MultiMCManifest;
-import com.atlauncher.data.technic.TechnicModpack;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifest;
+import org.lusd1.the_angel_launcher.data.json.Java;
+import org.lusd1.the_angel_launcher.data.json.QuickPlay;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCManifest;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpack;
 import com.google.gson.annotations.SerializedName;
 
 @Json

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.GridBagConstraints;
 import java.awt.event.ItemEvent;
@@ -35,19 +35,19 @@ import javax.swing.JTextField;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.CheckState;
-import com.atlauncher.data.LauncherTheme;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.listener.DelayedSavingKeyListener;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
-import com.atlauncher.viewmodel.impl.settings.GeneralSettingsViewModel;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.CheckState;
+import org.lusd1.the_angel_launcher.data.LauncherTheme;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.listener.DelayedSavingKeyListener;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.GeneralSettingsViewModel;
 
 public class GeneralSettingsTab extends AbstractSettingsTab {
     private final GeneralSettingsViewModel viewModel;

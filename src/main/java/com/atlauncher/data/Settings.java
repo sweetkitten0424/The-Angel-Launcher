@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -37,14 +37,14 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.UUID;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Timestamper;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Timestamper;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
 import com.google.gson.annotations.SerializedName;
 
 public class Settings {

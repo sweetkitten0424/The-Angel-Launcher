@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -26,11 +26,11 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Map;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.network.ErrorReporting;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.network.ErrorReporting;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;

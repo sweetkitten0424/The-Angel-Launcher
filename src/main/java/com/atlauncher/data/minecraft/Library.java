@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft;
+package org.lusd1.the_angel_launcher.data.minecraft;
 
 import java.util.List;
 import java.util.Map;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class Library {
     public String name;

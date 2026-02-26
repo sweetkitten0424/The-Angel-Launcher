@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.awt.Window;
 import java.io.File;
@@ -31,7 +31,7 @@ import javax.swing.JOptionPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
+import org.lusd1.the_angel_launcher.App;
 
 public final class DialogManager {
     public static final int OPTION_TYPE = 0;

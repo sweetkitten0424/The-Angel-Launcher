@@ -23,7 +23,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.AWTEvent;
 import java.awt.Component;

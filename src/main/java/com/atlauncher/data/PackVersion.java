@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.ftb.FTBPackVersionType;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionType;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
 
 public class PackVersion {
     public String version;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.tools;
+package org.lusd1.the_angel_launcher.gui.tabs.tools;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -27,7 +27,7 @@ import javax.swing.border.TitledBorder;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
+import org.lusd1.the_angel_launcher.App;
 
 public abstract class AbstractToolPanel extends JPanel {
     protected final JPanel MIDDLE_PANEL = new JPanel();

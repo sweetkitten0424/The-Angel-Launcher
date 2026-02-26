@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,7 @@ import java.util.regex.Pattern;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
 
 /**
  * Various utility methods for working with CurseForge information.

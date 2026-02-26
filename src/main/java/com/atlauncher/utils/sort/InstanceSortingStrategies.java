@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils.sort;
+package org.lusd1.the_angel_launcher.utils.sort;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.data.Instance;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
 
 @SuppressWarnings("ImmutableEnumChecker")
 public enum InstanceSortingStrategies implements InstanceSortingStrategy, RelocalizationListener {

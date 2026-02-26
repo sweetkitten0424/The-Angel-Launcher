@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels.packbrowser;
+package org.lusd1.the_angel_launcher.gui.panels.packbrowser;
 
 import java.awt.BorderLayout;
 import java.awt.GridBagConstraints;
@@ -26,9 +26,9 @@ import javax.swing.JPanel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.gui.panels.LoadingPanel;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.gui.panels.LoadingPanel;
 
 public abstract class PackBrowserPlatformPanel extends JPanel {
     public abstract String getPlatformName();

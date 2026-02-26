@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.modrinth;
+package org.lusd1.the_angel_launcher.data.modrinth;
 
 public class ModrinthDonationUrl {
     public String id;

@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft;
+package org.lusd1.the_angel_launcher.data.minecraft;
 
 import java.nio.file.Path;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.annot.Json;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.annot.Json;
 
 @Json
 public class LoggingClient {

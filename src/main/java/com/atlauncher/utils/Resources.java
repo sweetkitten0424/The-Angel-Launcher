@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.awt.Font;
 import java.awt.GraphicsEnvironment;
@@ -23,8 +23,8 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.atlauncher.exceptions.ChunkyException;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.exceptions.ChunkyException;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public final class Resources {
     private static final Map<String, Object> resources = new HashMap<>();

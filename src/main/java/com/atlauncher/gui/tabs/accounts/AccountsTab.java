@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.accounts;
+package org.lusd1.the_angel_launcher.gui.tabs.accounts;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -38,21 +38,21 @@ import javax.swing.event.HyperlinkEvent;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.gui.dialogs.LoginWithMicrosoftDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.tabs.Tab;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.SkinUtils;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.viewmodel.base.IAccountsViewModel;
-import com.atlauncher.viewmodel.impl.AccountsViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.gui.dialogs.LoginWithMicrosoftDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.Tab;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.SkinUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.viewmodel.base.IAccountsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.AccountsViewModel;
 
 public class AccountsTab extends HierarchyPanel implements Tab {
     private static final long serialVersionUID = 2493791137600123223L;

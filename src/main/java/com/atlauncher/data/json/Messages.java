@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.json;
+package org.lusd1.the_angel_launcher.data.json;
 
 import javax.swing.JEditorPane;
 import javax.swing.event.HyperlinkEvent;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.Pack;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 @Json
 public class Messages {

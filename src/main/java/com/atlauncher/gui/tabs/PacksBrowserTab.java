@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -43,31 +43,31 @@ import javax.swing.UIManager;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.listener.TabChangeListener;
-import com.atlauncher.evnt.listener.ThemeListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.evnt.manager.TabChangeManager;
-import com.atlauncher.evnt.manager.ThemeManager;
-import com.atlauncher.gui.WheelScrollLayerUI;
-import com.atlauncher.gui.panels.packbrowser.ATLauncherPacksPanel;
-import com.atlauncher.gui.panels.packbrowser.CurseForgePacksPanel;
-import com.atlauncher.gui.panels.packbrowser.FTBPacksPanel;
-import com.atlauncher.gui.panels.packbrowser.ModrinthPacksPanel;
-import com.atlauncher.gui.panels.packbrowser.PackBrowserPlatformPanel;
-import com.atlauncher.gui.panels.packbrowser.PacksBrowserTabTitlePanel;
-import com.atlauncher.gui.panels.packbrowser.TechnicPacksPanel;
-import com.atlauncher.gui.panels.packbrowser.UnifiedPacksPanel;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.listener.TabChangeListener;
+import org.lusd1.the_angel_launcher.evnt.listener.ThemeListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.evnt.manager.TabChangeManager;
+import org.lusd1.the_angel_launcher.evnt.manager.ThemeManager;
+import org.lusd1.the_angel_launcher.gui.WheelScrollLayerUI;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.ATLauncherPacksPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.CurseForgePacksPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.FTBPacksPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.ModrinthPacksPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.PackBrowserPlatformPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.PacksBrowserTabTitlePanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.TechnicPacksPanel;
+import org.lusd1.the_angel_launcher.gui.panels.packbrowser.UnifiedPacksPanel;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.formdev.flatlaf.icons.FlatSearchIcon;
 
 public final class PacksBrowserTab extends JPanel

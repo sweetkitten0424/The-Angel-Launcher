@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.Frame;
 import java.awt.SystemTray;
@@ -27,15 +27,15 @@ import javax.swing.SwingUtilities;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.ConsoleState;
-import com.atlauncher.evnt.manager.ConsoleStateManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.ConsoleState;
+import org.lusd1.the_angel_launcher.evnt.manager.ConsoleStateManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public final class TrayMenu extends JPopupMenu {
 

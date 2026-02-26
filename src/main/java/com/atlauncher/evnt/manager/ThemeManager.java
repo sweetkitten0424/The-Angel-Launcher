@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt.manager;
+package org.lusd1.the_angel_launcher.evnt.manager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.SwingUtilities;
 
-import com.atlauncher.evnt.listener.ThemeListener;
+import org.lusd1.the_angel_launcher.evnt.listener.ThemeListener;
 
 public final class ThemeManager {
     private static final List<ThemeListener> listeners = new ArrayList<>();

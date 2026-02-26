@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.curseforge;
+package org.lusd1.the_angel_launcher.data.curseforge;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -27,12 +27,12 @@ import javax.annotation.Nullable;
 
 import org.joda.time.format.ISODateTimeFormat;
 
-import com.atlauncher.annot.ExcludeFromGsonSerialization;
-import com.atlauncher.data.json.DownloadType;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.annot.ExcludeFromGsonSerialization;
+import org.lusd1.the_angel_launcher.data.json.DownloadType;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
 import com.google.gson.annotations.SerializedName;
 
 public class CurseForgeFile {

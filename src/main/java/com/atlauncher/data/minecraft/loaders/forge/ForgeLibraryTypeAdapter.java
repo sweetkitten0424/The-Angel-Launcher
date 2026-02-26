@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.forge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.forge;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
@@ -23,14 +23,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.Download;
-import com.atlauncher.data.minecraft.Downloads;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.Download;
+import org.lusd1.the_angel_launcher.data.minecraft.Downloads;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.panels.packbrowser;
+package org.lusd1.the_angel_launcher.gui.panels.packbrowser;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -25,10 +25,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
-import com.atlauncher.App;
-import com.atlauncher.evnt.listener.ThemeListener;
-import com.atlauncher.evnt.manager.ThemeManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.evnt.listener.ThemeListener;
+import org.lusd1.the_angel_launcher.evnt.manager.ThemeManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class PacksBrowserTabTitlePanel extends JPanel implements ThemeListener {
     private final JLabel label = new JLabel(null, null, SwingConstants.CENTER);

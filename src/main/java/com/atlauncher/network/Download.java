@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -30,16 +30,16 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.ArchiveUtils;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.ArchiveUtils;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 import com.google.common.hash.HashCode;
 
 import okhttp3.CacheControl;

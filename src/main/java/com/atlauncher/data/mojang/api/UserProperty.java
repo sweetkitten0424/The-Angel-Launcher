@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.mojang.api;
+package org.lusd1.the_angel_launcher.data.mojang.api;
 
 import java.util.Map;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 @Json
 public class UserProperty {

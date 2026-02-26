@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.util.Locale;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.utils.Hashing;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.utils.Hashing;
 import com.google.common.hash.HashCode;
 
 @Json

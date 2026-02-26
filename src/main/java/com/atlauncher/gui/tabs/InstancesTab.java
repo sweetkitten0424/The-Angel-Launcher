@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 import java.awt.BorderLayout;
 
@@ -24,13 +24,13 @@ import javax.swing.JScrollPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.gui.WheelScrollLayerUI;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.tabs.instances.InstancesListPanel;
-import com.atlauncher.gui.tabs.instances.InstancesNavigationPanel;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.viewmodel.base.IInstancesTabViewModel;
-import com.atlauncher.viewmodel.impl.InstancesTabViewModel;
+import org.lusd1.the_angel_launcher.gui.WheelScrollLayerUI;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.instances.InstancesListPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.instances.InstancesNavigationPanel;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.viewmodel.base.IInstancesTabViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.InstancesTabViewModel;
 
 public class InstancesTab extends HierarchyPanel implements Tab {
     private static final long serialVersionUID = -969812552965390610L;

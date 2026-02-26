@@ -15,18 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.technic.TechnicModpack;
-import com.atlauncher.data.technic.TechnicSearchResults;
-import com.atlauncher.data.technic.TechnicSolderModpack;
-import com.atlauncher.data.technic.TechnicSolderModpackManifest;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpack;
+import org.lusd1.the_angel_launcher.data.technic.TechnicSearchResults;
+import org.lusd1.the_angel_launcher.data.technic.TechnicSolderModpack;
+import org.lusd1.the_angel_launcher.data.technic.TechnicSolderModpackManifest;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 
 import okhttp3.CacheControl;
 

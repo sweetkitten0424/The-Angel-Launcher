@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Window;
@@ -32,10 +32,10 @@ import javax.swing.SwingConstants;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.interfaces.NetworkProgressable;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.interfaces.NetworkProgressable;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class ProgressDialog<T> extends JDialog implements NetworkProgressable {
     private final String labelText; // The text to add to the JLabel

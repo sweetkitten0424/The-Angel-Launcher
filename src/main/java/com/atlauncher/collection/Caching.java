@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.collection;
+package org.lusd1.the_angel_launcher.collection;
 
 import java.util.Iterator;
 import java.util.LinkedHashMap;
@@ -23,7 +23,7 @@ import java.util.Map;
 
 public final class Caching {
     public static final int MAX_SIZE = Integer
-            .parseInt(System.getProperty("com.atlauncher.collection.Caching.cacheSize", "127"));
+            .parseInt(System.getProperty("org.lusd1.the_angel_launcher.collection.Caching.cacheSize", "127"));
 
     private Caching() {
     }

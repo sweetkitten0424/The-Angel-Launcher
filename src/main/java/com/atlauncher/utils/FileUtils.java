@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -23,9 +23,9 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.stream.Stream;
 
-import com.atlauncher.App;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.walker.DeleteDirVisitor;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.walker.DeleteDirVisitor;
 
 public class FileUtils {
     public static boolean delete(Path path) {

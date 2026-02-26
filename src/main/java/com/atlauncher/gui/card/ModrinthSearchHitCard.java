@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -31,13 +31,13 @@ import javax.swing.border.EmptyBorder;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.modrinth.ModrinthSearchHit;
-import com.atlauncher.gui.borders.IconTitledBorder;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.BackgroundImageWorker;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSearchHit;
+import org.lusd1.the_angel_launcher.gui.borders.IconTitledBorder;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.BackgroundImageWorker;
 
 public final class ModrinthSearchHitCard extends JPanel {
     private final ModrinthSearchHit mod;

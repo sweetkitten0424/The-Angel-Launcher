@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.writer;
+package org.lusd1.the_angel_launcher.writer;
 
 import java.io.Closeable;
 import java.io.Flushable;
 import java.io.IOException;
 import java.io.Writer;
 
-import com.atlauncher.evnt.LogEvent;
-import com.atlauncher.exceptions.ChunkyException;
+import org.lusd1.the_angel_launcher.evnt.LogEvent;
+import org.lusd1.the_angel_launcher.exceptions.ChunkyException;
 
 public final class LogEventWriter implements Closeable, Flushable {
     private final Writer writer;

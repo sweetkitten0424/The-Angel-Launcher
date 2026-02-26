@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 import java.awt.BorderLayout;
 import java.util.Arrays;
@@ -28,26 +28,26 @@ import javax.swing.JTabbedPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.tabs.settings.BackupsSettingsTab;
-import com.atlauncher.gui.tabs.settings.CommandsSettingsTab;
-import com.atlauncher.gui.tabs.settings.EnvironmentVariablesTab;
-import com.atlauncher.gui.tabs.settings.GeneralSettingsTab;
-import com.atlauncher.gui.tabs.settings.JavaSettingsTab;
-import com.atlauncher.gui.tabs.settings.LoggingSettingsTab;
-import com.atlauncher.gui.tabs.settings.ModsSettingsTab;
-import com.atlauncher.gui.tabs.settings.NetworkSettingsTab;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.viewmodel.impl.settings.BackupsSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.CommandsSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.EnvironmentVariablesViewModel;
-import com.atlauncher.viewmodel.impl.settings.GeneralSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.JavaSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.LoggingSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.ModsSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.NetworkSettingsViewModel;
-import com.atlauncher.viewmodel.impl.settings.SettingsViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.BackupsSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.CommandsSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.EnvironmentVariablesTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.GeneralSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.JavaSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.LoggingSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.ModsSettingsTab;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.NetworkSettingsTab;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.BackupsSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.CommandsSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.EnvironmentVariablesViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.GeneralSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.JavaSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.LoggingSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.ModsSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.NetworkSettingsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.SettingsViewModel;
 
 public class SettingsTab extends HierarchyPanel implements Tab {
     @Nullable

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -24,10 +24,10 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.border.Border;
 
-import com.atlauncher.App;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.tabs.Tab;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.Tab;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public abstract class AbstractSettingsTab extends HierarchyPanel implements Tab {
     final ImageIcon HELP_ICON = Utils.getIconImage(App.THEME.getIconPath("question"));

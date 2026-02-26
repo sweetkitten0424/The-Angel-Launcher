@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -26,16 +26,16 @@ import java.util.UUID;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.microsoft.Entitlements;
-import com.atlauncher.data.microsoft.LoginResponse;
-import com.atlauncher.data.microsoft.OauthDeviceCodeResponse;
-import com.atlauncher.data.microsoft.OauthTokenResponse;
-import com.atlauncher.data.microsoft.Profile;
-import com.atlauncher.data.microsoft.XboxLiveAuthResponse;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.microsoft.Entitlements;
+import org.lusd1.the_angel_launcher.data.microsoft.LoginResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthDeviceCodeResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.OauthTokenResponse;
+import org.lusd1.the_angel_launcher.data.microsoft.Profile;
+import org.lusd1.the_angel_launcher.data.microsoft.XboxLiveAuthResponse;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 
 import okhttp3.FormBody;
 import okhttp3.Headers;

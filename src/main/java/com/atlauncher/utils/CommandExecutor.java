@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -33,14 +33,14 @@ import java.util.Optional;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.minecraft.JavaRuntime;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.exceptions.CommandException;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntime;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.exceptions.CommandException;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public class CommandExecutor {
     /**

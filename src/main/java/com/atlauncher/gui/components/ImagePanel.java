@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.Cursor;
 import java.awt.Dimension;
@@ -28,7 +28,7 @@ import javax.annotation.Nonnull;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public final class ImagePanel extends JPanel {
     private static final Cursor HAND = new Cursor(Cursor.HAND_CURSOR);

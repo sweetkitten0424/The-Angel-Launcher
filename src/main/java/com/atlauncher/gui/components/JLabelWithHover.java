@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import javax.swing.Icon;
 import javax.swing.JLabel;
 import javax.swing.JToolTip;
 import javax.swing.border.Border;
 
-import com.atlauncher.gui.HoverLineBorder;
+import org.lusd1.the_angel_launcher.gui.HoverLineBorder;
 
 public class JLabelWithHover extends JLabel {
     public JLabelWithHover(Icon icon, String tooltipText, Border border) {

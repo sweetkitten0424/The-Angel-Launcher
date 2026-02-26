@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.news;
+package org.lusd1.the_angel_launcher.gui.tabs.news;
 
 import java.awt.BorderLayout;
 import java.awt.Toolkit;
@@ -35,12 +35,12 @@ import javax.swing.text.html.StyleSheet;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.panels.LoadingPanel;
-import com.atlauncher.gui.tabs.Tab;
-import com.atlauncher.utils.OS;
-import com.atlauncher.viewmodel.base.INewsViewModel;
-import com.atlauncher.viewmodel.impl.NewsViewModel;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.panels.LoadingPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.Tab;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.viewmodel.base.INewsViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.NewsViewModel;
 
 /**
  * This class extends {@link JPanel} and provides a Panel for displaying the

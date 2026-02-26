@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders;
 
 import java.io.File;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Map;
 
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 public interface Loader {
     void set(Map<String, Object> metadata, File tempDir, InstanceInstaller instanceInstaller,

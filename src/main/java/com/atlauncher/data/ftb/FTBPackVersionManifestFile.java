@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.ftb;
+package org.lusd1.the_angel_launcher.data.ftb;
 
 import java.util.List;
 
-import com.atlauncher.data.json.DownloadType;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.data.json.ModType;
+import org.lusd1.the_angel_launcher.data.json.DownloadType;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.data.json.ModType;
 
 public class FTBPackVersionManifestFile {
     public String version;

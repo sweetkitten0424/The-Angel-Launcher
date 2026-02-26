@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import com.atlauncher.data.Instance;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.utils.Pair;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.utils.Pair;
 
 public class LoaderVersion {
     public String version;

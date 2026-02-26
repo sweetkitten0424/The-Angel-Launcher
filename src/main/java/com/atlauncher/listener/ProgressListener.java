@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.listener;
+package org.lusd1.the_angel_launcher.listener;
 
 public interface ProgressListener {
     void update(long bytesRead, long contentLength, boolean done);

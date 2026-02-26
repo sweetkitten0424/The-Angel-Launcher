@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft;
+package org.lusd1.the_angel_launcher.data.minecraft;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class OperatingSystemRule {
     public String name;

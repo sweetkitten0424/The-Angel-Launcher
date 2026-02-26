@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -32,18 +32,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.data.LWJGLLibrary;
-import com.atlauncher.data.LWJGLMajorVersion;
-import com.atlauncher.data.LWJGLVersion;
-import com.atlauncher.data.LWJGLVersions;
-import com.atlauncher.data.Settings;
-import com.atlauncher.data.minecraft.Download;
-import com.atlauncher.data.minecraft.Downloads;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.MinecraftVersion;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.data.LWJGLLibrary;
+import org.lusd1.the_angel_launcher.data.LWJGLMajorVersion;
+import org.lusd1.the_angel_launcher.data.LWJGLVersion;
+import org.lusd1.the_angel_launcher.data.LWJGLVersions;
+import org.lusd1.the_angel_launcher.data.Settings;
+import org.lusd1.the_angel_launcher.data.minecraft.Download;
+import org.lusd1.the_angel_launcher.data.minecraft.Downloads;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.MinecraftVersion;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class LWJGLManagerTest {
     private final LWJGLVersions LWJGL_VERSIONS = new LWJGLVersions();

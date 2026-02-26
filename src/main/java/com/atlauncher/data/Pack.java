@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -24,21 +24,21 @@ import java.util.Locale;
 
 import javax.swing.ImageIcon;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.json.Version;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.technic.TechnicModpack;
-import com.atlauncher.graphql.AddPackActionMutation;
-import com.atlauncher.graphql.type.AddPackActionInput;
-import com.atlauncher.graphql.type.PackLogAction;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.json.Version;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpack;
+import org.lusd1.the_angel_launcher.graphql.AddPackActionMutation;
+import org.lusd1.the_angel_launcher.graphql.type.AddPackActionInput;
+import org.lusd1.the_angel_launcher.graphql.type.PackLogAction;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class Pack {
     public int id;
@@ -288,7 +288,7 @@ public class Pack {
         if (this.json == null || !this.jsonVersion.equalsIgnoreCase(version) || (isTester() && redownload)) {
             int tries = 1;
             do {
-                this.json = com.atlauncher.network.Download.build().cached().setUrl(this.getJsonDownloadUrl(version))
+                this.json = org.lusd1.the_angel_launcher.network.Download.build().cached().setUrl(this.getJsonDownloadUrl(version))
                     .asString();
                 tries++;
             } while (json == null && tries < 5);

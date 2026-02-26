@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.awt.BorderLayout;
 import java.awt.Dialog.ModalityType;
@@ -77,99 +77,99 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import org.jetbrains.annotations.NotNull;
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.annot.Json;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeFileHash;
-import com.atlauncher.data.curseforge.CurseForgeFingerprint;
-import com.atlauncher.data.curseforge.CurseForgeFingerprintedMod;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.curseforge.CurseForgeSocialLinkType;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifest;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifestFile;
-import com.atlauncher.data.curseforge.pack.CurseForgeMinecraft;
-import com.atlauncher.data.curseforge.pack.CurseForgeModLoader;
-import com.atlauncher.data.installables.Installable;
-import com.atlauncher.data.installables.VanillaInstallable;
-import com.atlauncher.data.minecraft.AssetIndex;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.JavaRuntime;
-import com.atlauncher.data.minecraft.JavaRuntimeManifest;
-import com.atlauncher.data.minecraft.JavaRuntimeManifestFileType;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.minecraft.MinecraftVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.minecraft.loaders.fabric.FabricLoader;
-import com.atlauncher.data.minecraft.loaders.forge.FMLLibrariesConstants;
-import com.atlauncher.data.minecraft.loaders.forge.FMLLibrary;
-import com.atlauncher.data.minecraft.loaders.forge.ForgeLoader;
-import com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader;
-import com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader;
-import com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader;
-import com.atlauncher.data.modrinth.ModrinthFile;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthProjectType;
-import com.atlauncher.data.modrinth.ModrinthSide;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackFile;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.data.multimc.MultiMCComponent;
-import com.atlauncher.data.multimc.MultiMCManifest;
-import com.atlauncher.data.multimc.MultiMCRequire;
-import com.atlauncher.exceptions.CommandException;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.exceptions.InvalidPack;
-import com.atlauncher.graphql.AddPackActionMutation;
-import com.atlauncher.graphql.AddPackTimePlayedMutation;
-import com.atlauncher.graphql.type.AddPackActionInput;
-import com.atlauncher.graphql.type.AddPackTimePlayedInput;
-import com.atlauncher.graphql.type.PackLogAction;
-import com.atlauncher.gui.dialogs.InstanceInstallerDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.gui.dialogs.RenameInstanceDialog;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.CurseForgeUpdateManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.FTBUpdateManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LWJGLManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.managers.ModrinthModpackUpdateManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.managers.TechnicModpackUpdateManager;
-import com.atlauncher.mclauncher.MCLauncher;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.DownloadPool;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ArchiveUtils;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.CommandExecutor;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.CurseForgeUtils;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.SecurityUtils;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.ZipNameMapper;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFileHash;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprint;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprintedMod;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeSocialLinkType;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifest;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifestFile;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeMinecraft;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeModLoader;
+import org.lusd1.the_angel_launcher.data.installables.Installable;
+import org.lusd1.the_angel_launcher.data.installables.VanillaInstallable;
+import org.lusd1.the_angel_launcher.data.minecraft.AssetIndex;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntime;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimeManifest;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimeManifestFileType;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MinecraftVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.FMLLibrariesConstants;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.FMLLibrary;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthFile;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProjectType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSide;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackFile;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCComponent;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCRequire;
+import org.lusd1.the_angel_launcher.exceptions.CommandException;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.exceptions.InvalidPack;
+import org.lusd1.the_angel_launcher.graphql.AddPackActionMutation;
+import org.lusd1.the_angel_launcher.graphql.AddPackTimePlayedMutation;
+import org.lusd1.the_angel_launcher.graphql.type.AddPackActionInput;
+import org.lusd1.the_angel_launcher.graphql.type.AddPackTimePlayedInput;
+import org.lusd1.the_angel_launcher.graphql.type.PackLogAction;
+import org.lusd1.the_angel_launcher.gui.dialogs.InstanceInstallerDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.RenameInstanceDialog;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.CurseForgeUpdateManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.FTBUpdateManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LWJGLManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.managers.ModrinthModpackUpdateManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.managers.TechnicModpackUpdateManager;
+import org.lusd1.the_angel_launcher.mclauncher.MCLauncher;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.DownloadPool;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ArchiveUtils;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.CommandExecutor;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.CurseForgeUtils;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.SecurityUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.ZipNameMapper;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
@@ -437,7 +437,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         PerformanceManager.start("Downloading Minecraft");
         try {
             progressDialog.setLabel(GetText.tr("Downloading Minecraft"));
-            com.atlauncher.network.Download clientDownload = com.atlauncher.network.Download.build()
+            org.lusd1.the_angel_launcher.network.Download clientDownload = org.lusd1.the_angel_launcher.network.Download.build()
                 .setUrl(this.downloads.client.url).hash(this.downloads.client.sha1).size(this.downloads.client.size)
                 .withHttpClient(httpClient).downloadTo(this.getMinecraftJarLibraryPath());
 
@@ -485,7 +485,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
                 ? LWJGLManager.getReplacementLWJGL3Library(this, l)
                 : l)
             .forEach(library -> {
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                     .setUrl(library.downloads.artifact.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(library.downloads.artifact.path))
                     .hash(library.downloads.artifact.sha1).size(library.downloads.artifact.size)
@@ -499,9 +499,9 @@ public class Instance extends MinecraftVersion implements ModManagement {
                 ? LWJGLManager.getReplacementLWJGL3Library(this, l)
                 : l)
             .forEach(library -> {
-                com.atlauncher.data.minecraft.Download download = library.getNativeDownloadForOS();
+                org.lusd1.the_angel_launcher.data.minecraft.Download download = library.getNativeDownloadForOS();
 
-                librariesPool.add(new com.atlauncher.network.Download().setUrl(download.url)
+                librariesPool.add(new org.lusd1.the_angel_launcher.network.Download().setUrl(download.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(download.path)).hash(download.sha1)
                     .size(download.size)
                     .withHttpClient(httpClient));
@@ -514,7 +514,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
 
             if (fmlLibraries != null) {
                 fmlLibraries.forEach((library) -> {
-                    com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                    org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                         .setUrl(String.format("%s/fmllibs/%s", Constants.DOWNLOAD_SERVER, library.name))
                         .downloadTo(FileSystem.LIBRARIES.resolve("fmllib/" + library.name))
                         .copyTo(ROOT.resolve("lib/" + library.name)).hash(library.sha1Hash)
@@ -552,7 +552,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
                 JavaRuntime runtimeToDownload = runtimesForSystem.get(runtimeToUse).get(0);
 
                 try {
-                    JavaRuntimeManifest javaRuntimeManifest = com.atlauncher.network.Download.build()
+                    JavaRuntimeManifest javaRuntimeManifest = org.lusd1.the_angel_launcher.network.Download.build()
                         .setUrl(runtimeToDownload.manifest.url).size(runtimeToDownload.manifest.size)
                         .hash(runtimeToDownload.manifest.sha1).downloadTo(FileSystem.MINECRAFT_RUNTIMES
                             .resolve(runtimeToUse).resolve("manifest.json"))
@@ -576,7 +576,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
                     // collect the files we need to download
                     javaRuntimeManifest.files.forEach((key, file) -> {
                         if (file.type == JavaRuntimeManifestFileType.FILE) {
-                            com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                            org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                                 .setUrl(file.downloads.raw.url).downloadTo(runtimeDirectory.resolve(key))
                                 .hash(file.downloads.raw.sha1).size(file.downloads.raw.size)
                                 .executable(file.executable).withHttpClient(httpClient);
@@ -609,7 +609,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         PerformanceManager.start("Organising Resources 1");
         progressDialog.setLabel(GetText.tr("Organising Resources"));
 
-        AssetIndex index = com.atlauncher.network.Download.build().setUrl(assetIndex.url).hash(assetIndex.sha1)
+        AssetIndex index = org.lusd1.the_angel_launcher.network.Download.build().setUrl(assetIndex.url).hash(assetIndex.sha1)
             .size(assetIndex.size).downloadTo(FileSystem.RESOURCES_INDEXES.resolve(assetIndex.id + ".json"))
             .withHttpClient(httpClient).asClass(AssetIndex.class);
 
@@ -620,7 +620,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
                 String filename = object.hash.substring(0, 2) + "/" + object.hash;
                 String url = String.format("%s/%s", Constants.MINECRAFT_RESOURCES, filename);
 
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download().setUrl(url)
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download().setUrl(url)
                     .downloadTo(FileSystem.RESOURCES_OBJECTS.resolve(filename)).hash(object.hash).size(object.size)
                     .withHttpClient(httpClient);
 
@@ -719,7 +719,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
             LWJGLLibrary library = LWJGLManager.getLegacyLWJGLLibrary();
 
             if (library != null) {
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download().setUrl(library.url)
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download().setUrl(library.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(library.path)).unzipTo(lwjglNativesTempDir)
                     .hash(library.sha1).size(library.size).withHttpClient(httpClient);
 
@@ -1588,7 +1588,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         Map<Long, DisableableMod> murmurHashes = new HashMap<>();
 
         this.launcher.mods.stream()
-            .filter(m -> !m.disabled && m.type != com.atlauncher.data.Type.worlds)
+            .filter(m -> !m.disabled && m.type != org.lusd1.the_angel_launcher.data.Type.worlds)
             .forEach(dm -> {
                 try {
                     long hash = Hashing.murmur(dm.getFile(this.ROOT, this.id).toPath());
@@ -1660,7 +1660,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         manifest.author = author;
         manifest.files = this.launcher.mods.stream()
             .filter(m -> !m.disabled && m.isFromCurseForge() && m.hasFullCurseForgeInformation()
-                && m.type != com.atlauncher.data.Type.worlds)
+                && m.type != org.lusd1.the_angel_launcher.data.Type.worlds)
             .filter(mod -> overrides.stream()
                 .anyMatch(path -> getRoot().relativize(mod.getPath(this)).startsWith(path)))
             .collect(Collectors.collectingAndThen(
@@ -1702,7 +1702,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         StringBuilder sb = new StringBuilder("<ul>");
         this.launcher.mods.stream()
             .filter(m -> !m.disabled && m.isFromCurseForge() && m.hasFullCurseForgeInformation()
-                && m.type != com.atlauncher.data.Type.worlds)
+                && m.type != org.lusd1.the_angel_launcher.data.Type.worlds)
             // #875 - Non available mods/files will be rejected by CurseForge
             .filter(mod -> mod.curseForgeFile.isAvailable)
             .filter(mod -> overrides.stream()
@@ -1766,7 +1766,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         // remove files that come from CurseForge or aren't disabled
         launcher.mods.stream()
             .filter(m -> !m.disabled && m.isFromCurseForge() && m.hasFullCurseForgeInformation()
-                && m.type != com.atlauncher.data.Type.worlds)
+                && m.type != org.lusd1.the_angel_launcher.data.Type.worlds)
             // #875 - Non available mods/files will be rejected by CurseForge
             .filter(mod -> mod.curseForgeFile.isAvailable)
             .forEach(mod -> {
@@ -2996,7 +2996,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
 
         // next remove any mods that the no longer exist in the filesystem
         List<DisableableMod> removedMods = launcher.mods.parallelStream().filter(mod -> {
-            if (!mod.wasSelected || mod.skipped || mod.type != com.atlauncher.data.Type.mods) {
+            if (!mod.wasSelected || mod.skipped || mod.type != org.lusd1.the_angel_launcher.data.Type.mods) {
                 return false;
             }
 
@@ -3019,7 +3019,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         Set<File> seenModFiles = new HashSet<>();
         List<DisableableMod> duplicateMods = launcher.mods.stream()
             .filter(mod -> {
-                if (!mod.wasSelected || mod.skipped || mod.type != com.atlauncher.data.Type.mods) {
+                if (!mod.wasSelected || mod.skipped || mod.type != org.lusd1.the_angel_launcher.data.Type.mods) {
                     return false;
                 }
 
@@ -3385,7 +3385,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
                 FileUtils.copyFile(downloadLocation, finalLocation, true);
             }
         } else {
-            com.atlauncher.network.Download download = com.atlauncher.network.Download.build().setUrl(file.downloadUrl)
+            org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build().setUrl(file.downloadUrl)
                 .downloadTo(downloadLocation).size(file.fileLength)
                 .withHttpClient(Network.createProgressClient(dialog));
 
@@ -3443,7 +3443,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
         }
 
         // add this mod to the instance (if not a world)
-        if (dm.type != com.atlauncher.data.Type.worlds) {
+        if (dm.type != org.lusd1.the_angel_launcher.data.Type.worlds) {
             this.launcher.mods.add(dm);
             this.save();
         }
@@ -3480,7 +3480,7 @@ public class Instance extends MinecraftVersion implements ModManagement {
             : (mod.projectType == ModrinthProjectType.SHADER
                 ? this.getRoot().resolve("shaderpacks").resolve(fileToDownload.filename)
                 : this.getRoot().resolve("resourcepacks").resolve(fileToDownload.filename));
-        com.atlauncher.network.Download download = com.atlauncher.network.Download.build().setUrl(fileToDownload.url)
+        org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build().setUrl(fileToDownload.url)
             .downloadTo(downloadLocation).copyTo(finalLocation)
             .withHttpClient(Network.createProgressClient(dialog));
 

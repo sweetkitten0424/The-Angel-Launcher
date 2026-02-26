@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;
@@ -49,19 +49,19 @@ import javax.swing.table.TableColumnModel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.MCVersionRow;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.gui.components.LockingPreservingCaretTextSetter;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.listener.StatefulTextKeyAdapter;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.viewmodel.base.ICreatePackViewModel;
-import com.atlauncher.viewmodel.impl.CreatePackViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.MCVersionRow;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.gui.components.LockingPreservingCaretTextSetter;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.listener.StatefulTextKeyAdapter;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.viewmodel.base.ICreatePackViewModel;
+import org.lusd1.the_angel_launcher.viewmodel.impl.CreatePackViewModel;
 import com.formdev.flatlaf.ui.FlatScrollPaneBorder;
 
 import io.reactivex.rxjava3.core.Observable;

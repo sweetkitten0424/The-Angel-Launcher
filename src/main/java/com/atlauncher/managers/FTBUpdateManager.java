@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.util.Comparator;
 import java.util.Locale;
@@ -26,11 +26,11 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.ftb.FTBPackVersion;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersion;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;

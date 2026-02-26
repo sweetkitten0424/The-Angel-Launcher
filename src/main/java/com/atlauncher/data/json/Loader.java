@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.json;
+package org.lusd1.the_angel_launcher.data.json;
 
 import java.io.File;
 import java.lang.reflect.InvocationTargetException;
@@ -23,10 +23,10 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 @Json
 public class Loader {
@@ -61,11 +61,11 @@ public class Loader {
         return this.chooseMethod;
     }
 
-    public com.atlauncher.data.minecraft.loaders.Loader getLoader(File tempDir, InstanceInstaller instanceInstaller,
+    public org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader getLoader(File tempDir, InstanceInstaller instanceInstaller,
             LoaderVersion loaderVersion) throws Exception {
-        com.atlauncher.data.minecraft.loaders.Loader instance = Class
-                .forName(this.className.replace("com.atlauncher.data.loaders", "com.atlauncher.data.minecraft.loaders"))
-                .asSubclass(com.atlauncher.data.minecraft.loaders.Loader.class)
+        org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader instance = Class
+                .forName(this.className.replace("org.lusd1.the_angel_launcher.data.loaders", "org.lusd1.the_angel_launcher.data.minecraft.loaders"))
+                .asSubclass(org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader.class)
                 .getDeclaredConstructor().newInstance();
 
         instance.set(this.metadata, tempDir, instanceInstaller, loaderVersion);
@@ -77,8 +77,8 @@ public class Loader {
     public List<LoaderVersion> getChoosableVersions(String minecraft) {
         try {
             Method method = Class
-                    .forName(this.chooseClassName.replace("com.atlauncher.data.loaders",
-                            "com.atlauncher.data.minecraft.loaders"))
+                    .forName(this.chooseClassName.replace("org.lusd1.the_angel_launcher.data.loaders",
+                            "org.lusd1.the_angel_launcher.data.minecraft.loaders"))
                     .getDeclaredMethod(this.chooseMethod, String.class);
 
             return (List<LoaderVersion>) method.invoke(null, minecraft);

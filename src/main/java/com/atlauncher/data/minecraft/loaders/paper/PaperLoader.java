@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.paper;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.paper;
 
 import java.io.File;
 import java.io.IOException;
@@ -25,18 +25,18 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Network;
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.loaders.Loader;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.graphql.GetPaperLoaderVersionsForMinecraftVersionQuery;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.graphql.GetPaperLoaderVersionsForMinecraftVersionQuery;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 import okhttp3.OkHttpClient;
 

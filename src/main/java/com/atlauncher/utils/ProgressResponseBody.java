@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.IOException;
 
-import com.atlauncher.listener.ProgressListener;
+import org.lusd1.the_angel_launcher.listener.ProgressListener;
 
 import okhttp3.MediaType;
 import okhttp3.ResponseBody;

@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.neoforge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge;
 
 import java.io.File;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 @Json
 public class Data {

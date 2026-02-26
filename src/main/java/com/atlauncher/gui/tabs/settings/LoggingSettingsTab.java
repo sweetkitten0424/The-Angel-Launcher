@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.GridBagConstraints;
 
@@ -23,10 +23,10 @@ import javax.swing.JCheckBox;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.viewmodel.impl.settings.LoggingSettingsViewModel;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.LoggingSettingsViewModel;
 
 public class LoggingSettingsTab extends AbstractSettingsTab {
 

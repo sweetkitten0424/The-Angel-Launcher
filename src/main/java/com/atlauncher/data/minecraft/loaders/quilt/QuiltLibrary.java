@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.quilt;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.annot.Json;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.Download;
-import com.atlauncher.data.minecraft.Downloads;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.Download;
+import org.lusd1.the_angel_launcher.data.minecraft.Downloads;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.common.hash.HashCode;
 
 @Json

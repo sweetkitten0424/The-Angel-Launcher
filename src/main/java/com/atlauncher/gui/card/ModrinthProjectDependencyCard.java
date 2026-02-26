@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -32,16 +32,16 @@ import javax.swing.border.TitledBorder;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.modrinth.ModrinthDependency;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.gui.dialogs.ModrinthVersionSelectorDialog;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.BackgroundImageWorker;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthDependency;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.gui.dialogs.ModrinthVersionSelectorDialog;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.BackgroundImageWorker;
 
 public final class ModrinthProjectDependencyCard extends JPanel {
     private final ModrinthVersionSelectorDialog parent;

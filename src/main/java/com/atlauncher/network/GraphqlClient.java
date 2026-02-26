@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -42,12 +42,12 @@ import com.apollographql.apollo.api.cache.http.HttpCachePolicy.FetchStrategy;
 import com.apollographql.apollo.cache.http.ApolloHttpCache;
 import com.apollographql.apollo.cache.http.DiskLruHttpCacheStore;
 import com.apollographql.apollo.exception.ApolloException;
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.graphql.type.CustomType;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.graphql.type.CustomType;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public class GraphqlClient {
 

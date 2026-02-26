@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,15 +30,15 @@ import java.util.Locale;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.PackUsers;
-import com.atlauncher.exceptions.InvalidPack;
-import com.atlauncher.utils.Hashing;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.PackUsers;
+import org.lusd1.the_angel_launcher.exceptions.InvalidPack;
+import org.lusd1.the_angel_launcher.utils.Hashing;
 import com.google.common.hash.HashCode;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
