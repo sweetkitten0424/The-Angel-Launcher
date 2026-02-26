@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -28,8 +28,8 @@ import javax.swing.JButton;
 import javax.swing.JPopupMenu;
 import javax.swing.UIManager;
 
-import com.atlauncher.App;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class DropDownButton extends JButton {
     private final JPopupMenu popupMenu;

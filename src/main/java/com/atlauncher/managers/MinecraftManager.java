@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -29,14 +29,14 @@ import java.util.stream.Collectors;
 
 import org.joda.time.format.ISODateTimeFormat;
 
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.data.minecraft.VersionManifest;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifest;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 

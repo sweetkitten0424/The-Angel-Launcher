@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.forge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.forge;
 
 import java.util.List;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
 
 @Json
 public class ForgeLibrary extends Library {

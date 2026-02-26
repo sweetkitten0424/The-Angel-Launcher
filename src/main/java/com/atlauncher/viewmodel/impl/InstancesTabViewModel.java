@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl;
+package org.lusd1.the_angel_launcher.viewmodel.impl;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -30,21 +30,21 @@ import java.util.stream.Stream;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.PackVersion;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.gui.models.InstanceUIModel;
-import com.atlauncher.managers.CurseForgeUpdateManager;
-import com.atlauncher.managers.FTBUpdateManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.ModrinthModpackUpdateManager;
-import com.atlauncher.managers.TechnicModpackUpdateManager;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
-import com.atlauncher.utils.sort.InstanceSortingStrategy;
-import com.atlauncher.viewmodel.base.IInstancesTabViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.PackVersion;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.gui.models.InstanceUIModel;
+import org.lusd1.the_angel_launcher.managers.CurseForgeUpdateManager;
+import org.lusd1.the_angel_launcher.managers.FTBUpdateManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.ModrinthModpackUpdateManager;
+import org.lusd1.the_angel_launcher.managers.TechnicModpackUpdateManager;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategy;
+import org.lusd1.the_angel_launcher.viewmodel.base.IInstancesTabViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.BackpressureStrategy;

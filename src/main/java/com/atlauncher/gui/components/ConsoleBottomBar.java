@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -30,17 +30,17 @@ import javax.swing.SwingUtilities;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.thread.PasteUpload;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.thread.PasteUpload;
 
 public class ConsoleBottomBar extends BottomBar implements RelocalizationListener {
 

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.base;
+package org.lusd1.the_angel_launcher.viewmodel.base;
 
 import java.awt.Font;
 import java.util.List;
@@ -25,9 +25,9 @@ import javax.annotation.Nullable;
 
 import org.antlr.v4.runtime.misc.NotNull;
 
-import com.atlauncher.data.MCVersionRow;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.MCVersionRow;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
 
 import io.reactivex.rxjava3.core.Observable;
 

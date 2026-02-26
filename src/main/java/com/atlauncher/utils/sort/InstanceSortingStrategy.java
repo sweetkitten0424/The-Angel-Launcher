@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils.sort;
+package org.lusd1.the_angel_launcher.utils.sort;
 
-import com.atlauncher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Instance;
 
 public interface InstanceSortingStrategy extends SortingStrategy<Instance> {
 }

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -43,14 +43,14 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.TrustManagerFactory;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Network;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.utils.javafinder.JavaFinder;
-import com.atlauncher.utils.javafinder.JavaInfo;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.utils.javafinder.JavaFinder;
+import org.lusd1.the_angel_launcher.utils.javafinder.JavaInfo;
 
 import okhttp3.tls.Certificates;
 

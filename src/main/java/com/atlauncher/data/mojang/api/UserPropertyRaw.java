@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.mojang.api;
+package org.lusd1.the_angel_launcher.data.mojang.api;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.annot.Json;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.annot.Json;
 
 import net.iharder.Base64;
 

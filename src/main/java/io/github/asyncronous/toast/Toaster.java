@@ -10,8 +10,8 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.UIManager;
 
-import com.atlauncher.App;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 import io.github.asyncronous.toast.ui.ToastWindow;
 

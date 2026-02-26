@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
@@ -24,7 +24,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 import com.google.common.hash.HashCode;
 import com.sangupta.murmur.Murmur2;
 

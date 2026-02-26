@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl;
+package org.lusd1.the_angel_launcher.viewmodel.impl;
 
 import java.util.Collections;
 import java.util.List;
@@ -24,13 +24,13 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Nonnull;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.Contributor;
-import com.atlauncher.graphql.GetLauncherContributorsQuery;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.viewmodel.base.IAboutTabViewModel;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.Contributor;
+import org.lusd1.the_angel_launcher.graphql.GetLauncherContributorsQuery;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.viewmodel.base.IAboutTabViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

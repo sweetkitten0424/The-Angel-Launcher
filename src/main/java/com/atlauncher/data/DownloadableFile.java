@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.util.Locale;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.network.Download;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class DownloadableFile {
     public String name;

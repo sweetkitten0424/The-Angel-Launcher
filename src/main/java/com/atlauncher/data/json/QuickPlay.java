@@ -15,10 +15,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.json;
+package org.lusd1.the_angel_launcher.data.json;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.QuickPlayOption;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.QuickPlayOption;
 
 /**
  * A data class that contains information about the quick play feature

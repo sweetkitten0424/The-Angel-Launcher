@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs.instancesettings;
+package org.lusd1.the_angel_launcher.gui.dialogs.instancesettings;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -32,12 +32,12 @@ import javax.swing.border.Border;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Instance;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class CommandsInstanceSettingsTab extends JPanel {
     private final Instance instance;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.workers;
+package org.lusd1.the_angel_launcher.workers;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,106 +46,106 @@ import javax.swing.SwingWorker;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.InstanceLauncher;
-import com.atlauncher.data.Server;
-import com.atlauncher.data.Type;
-import com.atlauncher.data.curseforge.CurseForgeAttachment;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeFileHash;
-import com.atlauncher.data.curseforge.CurseForgeFingerprint;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifest;
-import com.atlauncher.data.curseforge.pack.CurseForgeModLoader;
-import com.atlauncher.data.ftb.FTBPackArt;
-import com.atlauncher.data.ftb.FTBPackArtType;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.ftb.FTBPackVersionManifest;
-import com.atlauncher.data.ftb.FTBPackVersionManifestFileType;
-import com.atlauncher.data.ftb.FTBPackVersionManifestMod;
-import com.atlauncher.data.ftb.FTBPackVersionManifestTarget;
-import com.atlauncher.data.ftb.FTBPackVersionManifestTargetType;
-import com.atlauncher.data.ftb.FTBPackVersionModsManifest;
-import com.atlauncher.data.json.Delete;
-import com.atlauncher.data.json.Deletes;
-import com.atlauncher.data.json.DownloadType;
-import com.atlauncher.data.json.Keep;
-import com.atlauncher.data.json.Keeps;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.data.json.ModType;
-import com.atlauncher.data.json.Version;
-import com.atlauncher.data.minecraft.ArgumentRule;
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.AssetIndex;
-import com.atlauncher.data.minecraft.Download;
-import com.atlauncher.data.minecraft.Downloads;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.JavaRuntime;
-import com.atlauncher.data.minecraft.JavaRuntimeManifest;
-import com.atlauncher.data.minecraft.JavaRuntimeManifestFileType;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.LoggingFile;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.minecraft.MinecraftVersion;
-import com.atlauncher.data.minecraft.MojangAssetIndex;
-import com.atlauncher.data.minecraft.MojangDownload;
-import com.atlauncher.data.minecraft.MojangDownloads;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.loaders.Loader;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.minecraft.loaders.fabric.FabricMetaVersion;
-import com.atlauncher.data.minecraft.loaders.forge.ForgeLoader;
-import com.atlauncher.data.modrinth.ModrinthFile;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.data.multimc.MultiMCComponent;
-import com.atlauncher.data.multimc.MultiMCManifest;
-import com.atlauncher.data.multimc.MultiMCPatch;
-import com.atlauncher.data.technic.TechnicModpack;
-import com.atlauncher.data.technic.TechnicModpackAsset;
-import com.atlauncher.data.technic.TechnicModpackManifestMod;
-import com.atlauncher.data.technic.TechnicSolderModpackManifest;
-import com.atlauncher.exceptions.LocalException;
-import com.atlauncher.graphql.GetForgeLoaderVersionQuery;
-import com.atlauncher.graphql.GetNeoForgeLoaderVersionQuery;
-import com.atlauncher.graphql.GetPaperLoaderVersionQuery;
-import com.atlauncher.graphql.GetPurpurLoaderVersionQuery;
-import com.atlauncher.gui.dialogs.BrowserDownloadDialog;
-import com.atlauncher.interfaces.NetworkProgressable;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.managers.ServerManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.DownloadPool;
-import com.atlauncher.network.ErrorReporting;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.network.NetworkClient;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ArchiveUtils;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.FTBApi;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.TechnicApi;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.walker.CaseFileVisitor;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.InstanceLauncher;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.data.Type;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeAttachment;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFileHash;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprint;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifest;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeModLoader;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackArt;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackArtType;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifest;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifestFileType;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifestMod;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifestTarget;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionManifestTargetType;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackVersionModsManifest;
+import org.lusd1.the_angel_launcher.data.json.Delete;
+import org.lusd1.the_angel_launcher.data.json.Deletes;
+import org.lusd1.the_angel_launcher.data.json.DownloadType;
+import org.lusd1.the_angel_launcher.data.json.Keep;
+import org.lusd1.the_angel_launcher.data.json.Keeps;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.data.json.ModType;
+import org.lusd1.the_angel_launcher.data.json.Version;
+import org.lusd1.the_angel_launcher.data.minecraft.ArgumentRule;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.AssetIndex;
+import org.lusd1.the_angel_launcher.data.minecraft.Download;
+import org.lusd1.the_angel_launcher.data.minecraft.Downloads;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntime;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimeManifest;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimeManifestFileType;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.LoggingFile;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MinecraftVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.MojangAssetIndex;
+import org.lusd1.the_angel_launcher.data.minecraft.MojangDownload;
+import org.lusd1.the_angel_launcher.data.minecraft.MojangDownloads;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricMetaVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthFile;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCComponent;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCPatch;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpack;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpackAsset;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpackManifestMod;
+import org.lusd1.the_angel_launcher.data.technic.TechnicSolderModpackManifest;
+import org.lusd1.the_angel_launcher.exceptions.LocalException;
+import org.lusd1.the_angel_launcher.graphql.GetForgeLoaderVersionQuery;
+import org.lusd1.the_angel_launcher.graphql.GetNeoForgeLoaderVersionQuery;
+import org.lusd1.the_angel_launcher.graphql.GetPaperLoaderVersionQuery;
+import org.lusd1.the_angel_launcher.graphql.GetPurpurLoaderVersionQuery;
+import org.lusd1.the_angel_launcher.gui.dialogs.BrowserDownloadDialog;
+import org.lusd1.the_angel_launcher.interfaces.NetworkProgressable;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.managers.ServerManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.DownloadPool;
+import org.lusd1.the_angel_launcher.network.ErrorReporting;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ArchiveUtils;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.FTBApi;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.TechnicApi;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.walker.CaseFileVisitor;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 
@@ -160,8 +160,8 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
     public Instance instance = null;
     public final String name;
-    public final com.atlauncher.data.Pack pack;
-    public final com.atlauncher.data.PackVersion version;
+    public final org.lusd1.the_angel_launcher.data.Pack pack;
+    public final org.lusd1.the_angel_launcher.data.PackVersion version;
     public final boolean showModsChooser;
     public LoaderVersion loaderVersion;
     public CurseForgeManifest curseForgeManifest;
@@ -188,7 +188,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
     public final Path temp;
 
     public Loader loader;
-    public com.atlauncher.data.json.Version packVersion;
+    public org.lusd1.the_angel_launcher.data.json.Version packVersion;
     public VersionManifestVersion minecraftVersionManifest = null;
     public MinecraftVersion minecraftVersion;
 
@@ -211,7 +211,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
     public boolean success;
     private JDialog dialog;
 
-    public InstanceInstaller(String name, com.atlauncher.data.Pack pack, com.atlauncher.data.PackVersion version,
+    public InstanceInstaller(String name, org.lusd1.the_angel_launcher.data.Pack pack, org.lusd1.the_angel_launcher.data.PackVersion version,
         boolean isReinstall, boolean isServer, boolean changingLoader, boolean saveMods,
         boolean showModsChooser, LoaderVersion loaderVersion, CurseForgeManifest curseForgeManifest,
         Path curseForgeExtractedPath, FTBPackManifest ftbPackManifest,
@@ -503,7 +503,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 FileUtils.moveFile(fileLocation2.toPath(), serverPackFile, true);
             }
         } else {
-            com.atlauncher.network.Download serverPackDownload = com.atlauncher.network.Download.build()
+            org.lusd1.the_angel_launcher.network.Download serverPackDownload = org.lusd1.the_angel_launcher.network.Download.build()
                 .setUrl(version._curseForgeFile.downloadUrl).downloadTo(serverPackFile)
                 .size(version._curseForgeFile.fileLength);
 
@@ -585,7 +585,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         fireSubProgressUnknown();
 
         this.packVersion = NetworkClient.get(this.pack.getJsonDownloadUrl(version.version),
-            com.atlauncher.data.json.Version.class);
+            org.lusd1.the_angel_launcher.data.json.Version.class);
 
         if (this.packVersion == null) {
             throw new Exception("Failed to download pack version definition");
@@ -616,7 +616,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         packVersion.enableCurseForgeIntegration = true;
         packVersion.enableEditingMods = true;
 
-        packVersion.loader = new com.atlauncher.data.json.Loader();
+        packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
         boolean hasJumpLoader = curseForgeManifest.files.stream()
             .anyMatch(m -> m.projectID == Constants.CURSEFORGE_JUMPLOADER_MOD_ID);
@@ -637,7 +637,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("minecraft", packVersion.minecraft);
             loaderMeta.put("loader", loaders.get(0).loader.version);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
         } else {
             CurseForgeModLoader loaderVersion = curseForgeManifest.minecraft.modLoaders.stream().filter(e -> e.primary)
                 .findFirst().orElse(null);
@@ -696,11 +696,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 packVersion.loader.metadata = loaderMeta;
 
                 if (Utils.matchVersion(curseForgeManifest.minecraft.version, "1.13", false, true)) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
                 } else if (Utils.matchVersion(curseForgeManifest.minecraft.version, "1.5", true, true)) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
                 } else {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
                 }
             } else if (loaderVersion.id.startsWith("fabric-")) {
                 String fabricVersionString = loaderVersion.id.replace("fabric-", "");
@@ -712,9 +712,9 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
                 // not technically supported, no examples, but should be right
                 if (MinecraftManager.getMinecraftVersion(packVersion.minecraft).is1132OrOlder()) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
                 } else {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
                 }
             } else if (loaderVersion.id.startsWith("quilt-")) {
                 String quiltVersionString = loaderVersion.id.replace("quilt-", "");
@@ -723,7 +723,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 loaderMeta.put("minecraft", packVersion.minecraft);
                 loaderMeta.put("loader", quiltVersionString);
                 packVersion.loader.metadata = loaderMeta;
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader";
             } else if (loaderVersion.id.startsWith("neoforge-")) {
                 String neoForgeVersionString = loaderVersion.id.replace("neoforge-", "");
 
@@ -741,7 +741,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 loaderMeta.put("rawVersion", response.neoForgeVersion().rawVersion());
 
                 packVersion.loader.metadata = loaderMeta;
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
             } else {
                 throw new Exception("Loader of id " + loaderVersion.id + " is unknown.");
             }
@@ -940,7 +940,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 FileUtils.moveFile(fileLocation2.toPath(), manifestFile, true);
             }
         } else {
-            com.atlauncher.network.Download manifestDownload = com.atlauncher.network.Download.build()
+            org.lusd1.the_angel_launcher.network.Download manifestDownload = org.lusd1.the_angel_launcher.network.Download.build()
                 .setUrl(version._curseForgeFile.downloadUrl).downloadTo(manifestFile)
                 .size(version._curseForgeFile.fileLength);
 
@@ -993,7 +993,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
         Path manifestFile = this.temp.resolve(filename);
 
-        com.atlauncher.network.Download manifestDownload = com.atlauncher.network.Download.build().setUrl(file.url)
+        org.lusd1.the_angel_launcher.network.Download manifestDownload = org.lusd1.the_angel_launcher.network.Download.build().setUrl(file.url)
             .downloadTo(manifestFile).withInstanceInstaller(this)
             .withHttpClient(Network.createProgressClient(this));
 
@@ -1062,7 +1062,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
         this.version.minecraftVersion = MinecraftManager.getMinecraftVersion(packVersion.minecraft);
 
-        packVersion.loader = new com.atlauncher.data.json.Loader();
+        packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
         FTBPackVersionManifestTarget modloaderTarget = this.ftbPackVersionManifest.targets.stream()
             .filter(t -> t.type == FTBPackVersionManifestTargetType.MODLOADER).findFirst().orElse(null);
@@ -1110,11 +1110,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             packVersion.loader.metadata = loaderMeta;
 
             if (Utils.matchVersion(packVersion.minecraft, "1.13", false, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
             } else if (Utils.matchVersion(packVersion.minecraft, "1.5", true, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
             } else {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
             }
         } else if (modloaderTarget.name.equalsIgnoreCase("neoforge")) {
             String neoForgeVersionString = modloaderTarget.version;
@@ -1132,7 +1132,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("rawVersion", response.neoForgeVersion().rawVersion());
 
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
         } else if (modloaderTarget.name.equalsIgnoreCase("fabric")) {
             String fabricVersionString = modloaderTarget.version;
 
@@ -1143,16 +1143,16 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
             // not technically supported, no examples, but should be right
             if (this.version.minecraftVersion.is1132OrOlder()) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
             } else {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
             }
         } else if (modloaderTarget.name.equalsIgnoreCase("quilt")) {
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", packVersion.minecraft);
             loaderMeta.put("loader", modrinthManifest.dependencies.get("quilt-loader"));
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader";
         } else {
             throw new Exception("Unknown modloader with name of " + modloaderTarget.name);
         }
@@ -1426,7 +1426,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         Path tempZip = FileSystem.TEMP.resolve("technic-" + technicModpack.name + "-modpack.zip");
         Path unzipLocation = FileSystem.TEMP.resolve("technic-" + technicModpack.name);
         OkHttpClient httpClient = Network.createProgressClient(this);
-        com.atlauncher.network.Download download = com.atlauncher.network.Download.build().setUrl(technicModpack.url)
+        org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build().setUrl(technicModpack.url)
             .downloadTo(tempZip).unzipTo(unzipLocation).withInstanceInstaller(this).withHttpClient(httpClient);
 
         if (download.needToDownload()) {
@@ -1500,7 +1500,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             boolean isNeoForge = versionJson.id.startsWith("neoforge-");
 
             if (forgeLibrary.isPresent() || fabricLibrary.isPresent() || isNeoForge) {
-                packVersion.loader = new com.atlauncher.data.json.Loader();
+                packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
                 if (forgeLibrary.isPresent()) {
                     String forgeLibraryName = forgeLibrary.get().name;
@@ -1542,11 +1542,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                     packVersion.loader.metadata = loaderMeta;
 
                     if (Utils.matchVersion(packVersion.minecraft, "1.13", false, true)) {
-                        packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                        packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
                     } else if (Utils.matchVersion(packVersion.minecraft, "1.5", true, true)) {
-                        packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                        packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
                     } else {
-                        packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                        packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
                     }
                 } else if (fabricLibrary.isPresent()) {
                     String fabricLibraryName = fabricLibrary.get().name;
@@ -1559,9 +1559,9 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
                     // not technically supported, no examples, but should be right
                     if (MinecraftManager.getMinecraftVersion(packVersion.minecraft).is1132OrOlder()) {
-                        packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+                        packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
                     } else {
-                        packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+                        packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
                     }
                 } else if (isNeoForge) {
                     String neoForgeVersionString = versionJson.id.substring(versionJson.id.lastIndexOf("-") + 1);
@@ -1578,7 +1578,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                     loaderMeta.put("version", neoForgeVersionResponse.neoForgeVersion().version());
                     loaderMeta.put("rawVersion", neoForgeVersionResponse.neoForgeVersion().rawVersion());
                     packVersion.loader.metadata = loaderMeta;
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
                 }
             }
         }
@@ -1615,7 +1615,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             || modrinthManifest.dependencies.containsKey("quilt-loader")
             || modrinthManifest.dependencies.containsKey("neoforge")
             || modrinthManifest.dependencies.containsKey("forge")) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
             if (modrinthManifest.dependencies.containsKey("fabric-loader")) {
                 Map<String, Object> loaderMeta = new HashMap<>();
@@ -1625,16 +1625,16 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
                 // not technically supported, 1 example which seems to work
                 if (this.version.minecraftVersion.is1132OrOlder()) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
                 } else {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
                 }
             } else if (modrinthManifest.dependencies.containsKey("quilt-loader")) {
                 Map<String, Object> loaderMeta = new HashMap<>();
                 loaderMeta.put("minecraft", packVersion.minecraft);
                 loaderMeta.put("loader", modrinthManifest.dependencies.get("quilt-loader"));
                 packVersion.loader.metadata = loaderMeta;
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader";
             } else if (modrinthManifest.dependencies.containsKey("neoforge")) {
                 String neoForgeVersionString = modrinthManifest.dependencies.get("neoforge");
 
@@ -1652,7 +1652,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 loaderMeta.put("rawVersion", response.neoForgeVersion().rawVersion());
 
                 packVersion.loader.metadata = loaderMeta;
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
             } else if (modrinthManifest.dependencies.containsKey("forge")) {
                 String forgeVersionString = modrinthManifest.dependencies.get("forge");
 
@@ -1692,11 +1692,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 packVersion.loader.metadata = loaderMeta;
 
                 if (Utils.matchVersion(packVersion.minecraft, "1.13", false, true)) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
                 } else if (Utils.matchVersion(packVersion.minecraft, "1.5", true, true)) {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
                 } else {
-                    packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                    packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
                 }
             }
         }
@@ -1732,7 +1732,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         packVersion.enableCurseForgeIntegration = true;
         packVersion.enableEditingMods = true;
 
-        packVersion.loader = new com.atlauncher.data.json.Loader();
+        packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
         MultiMCComponent neoForgedComponent = multiMCManifest.components.stream()
             .filter(c -> c.uid.equalsIgnoreCase("net.neoforged")).findFirst().orElse(null);
@@ -1760,7 +1760,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("rawVersion", response.neoForgeVersion().rawVersion());
 
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
         } else if (forgeComponent != null) {
             String forgeVersionString = forgeComponent.version;
 
@@ -1800,11 +1800,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             packVersion.loader.metadata = loaderMeta;
 
             if (Utils.matchVersion(minecraftVersion, "1.13", false, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
             } else if (Utils.matchVersion(packVersion.minecraft, "1.5", true, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
             } else {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
             }
         } else if (fabricLoaderComponent != null) {
             String fabricVersionString = fabricLoaderComponent.version;
@@ -1816,9 +1816,9 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
             // should probably look for the patch, but this is sound logic
             if (MinecraftManager.getMinecraftVersion(minecraftVersion).is1132OrOlder()) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
             } else {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
             }
         } else if (quiltLoaderComponent != null) {
             String quiltVersionString = quiltLoaderComponent.version;
@@ -1827,7 +1827,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("minecraft", minecraftVersion);
             loaderMeta.put("loader", quiltVersionString);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader";
         }
 
         hideSubProgressBar();
@@ -1846,7 +1846,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         packVersion.enableEditingMods = true;
 
         if (loaderVersion != null && loaderVersion.isForge()) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
 
             GetForgeLoaderVersionQuery.Data response = GraphqlClient
                 .callAndWait(new GetForgeLoaderVersionQuery(loaderVersion.version));
@@ -1884,33 +1884,33 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             packVersion.loader.metadata = loaderMeta;
 
             if (Utils.matchVersion(version.minecraftVersion.id, "1.13", false, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.Forge113Loader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.Forge113Loader";
             } else if (Utils.matchVersion(packVersion.minecraft, "1.5", true, true)) {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.LegacyForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.LegacyForgeLoader";
             } else {
-                packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.forge.ForgeLoader";
+                packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLoader";
             }
         } else if (loaderVersion != null && loaderVersion.isFabric()) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("loader", loaderVersion.version);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.fabric.FabricLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric.FabricLoader";
         } else if (loaderVersion != null && loaderVersion.isLegacyFabric()) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("loader", loaderVersion.version);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.legacyfabric.LegacyFabricLoader";
         } else if (loaderVersion != null && loaderVersion.isNeoForge()) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("loader", loaderVersion.version);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.neoforge.NeoForgeLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge.NeoForgeLoader";
         } else if (loaderVersion != null && loaderVersion.isPaper()) {
             String paperBuildString = loaderVersion.version;
 
@@ -1929,7 +1929,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 throw new Exception("Failed to find loader version for " + paperBuildString);
             }
 
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("build", response.paperVersion().build());
@@ -1938,7 +1938,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("downloadUrl", response.paperVersion().downloadUrl());
 
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.paper.PaperLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.paper.PaperLoader";
         } else if (loaderVersion != null && loaderVersion.isPurpur()) {
             String purpurBuildString = loaderVersion.version;
 
@@ -1957,7 +1957,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 throw new Exception("Failed to find loader version for " + purpurBuildString);
             }
 
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("build", response.purpurVersion().build());
@@ -1966,14 +1966,14 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             loaderMeta.put("downloadUrl", response.purpurVersion().downloadUrl());
 
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.purpur.PurpurLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.purpur.PurpurLoader";
         } else if (loaderVersion != null && loaderVersion.isQuilt()) {
-            packVersion.loader = new com.atlauncher.data.json.Loader();
+            packVersion.loader = new org.lusd1.the_angel_launcher.data.json.Loader();
             Map<String, Object> loaderMeta = new HashMap<>();
             loaderMeta.put("minecraft", version.minecraftVersion.id);
             loaderMeta.put("loader", loaderVersion.version);
             packVersion.loader.metadata = loaderMeta;
-            packVersion.loader.className = "com.atlauncher.data.minecraft.loaders.quilt.QuiltLoader";
+            packVersion.loader.className = "org.lusd1.the_angel_launcher.data.minecraft.loaders.quilt.QuiltLoader";
         }
 
         hideSubProgressBar();
@@ -1986,7 +1986,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
         minecraftVersionManifest = MinecraftManager.getMinecraftVersion(this.packVersion.getMinecraft());
 
-        this.minecraftVersion = com.atlauncher.network.Download.build()
+        this.minecraftVersion = org.lusd1.the_angel_launcher.network.Download.build()
             .setUrl(minecraftVersionManifest.url).hash(minecraftVersionManifest.sha1)
             .size(minecraftVersionManifest.size)
             .downloadTo(FileSystem.MINECRAFT_VERSIONS_JSON.resolve(minecraftVersionManifest.id + ".json"))
@@ -2032,7 +2032,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         boolean hasOptional = this.allMods.stream().anyMatch(Mod::isOptional);
 
         if (!this.allMods.isEmpty() && hasOptional) {
-            com.atlauncher.gui.dialogs.ModsChooser modsChooser = new com.atlauncher.gui.dialogs.ModsChooser(this);
+            org.lusd1.the_angel_launcher.gui.dialogs.ModsChooser modsChooser = new org.lusd1.the_angel_launcher.gui.dialogs.ModsChooser(this);
 
             if (this.showModsChooser) {
                 modsChooser.setVisible(true);
@@ -2051,22 +2051,22 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             this.selectedMods = this.allMods;
         }
 
-        for (com.atlauncher.data.json.Mod mod : this.selectedMods) {
+        for (org.lusd1.the_angel_launcher.data.json.Mod mod : this.selectedMods) {
             String file = mod.getFile();
 
             if (mod.type == ModType.mods
-                && this.packVersion.getCaseAllFiles() == com.atlauncher.data.json.CaseType.upper) {
+                && this.packVersion.getCaseAllFiles() == org.lusd1.the_angel_launcher.data.json.CaseType.upper) {
                 file = file.substring(0, file.lastIndexOf(".")).toUpperCase(Locale.ENGLISH)
                     + file.substring(file.lastIndexOf("."));
             } else if (mod.type == ModType.mods
-                && this.packVersion.getCaseAllFiles() == com.atlauncher.data.json.CaseType.lower) {
+                && this.packVersion.getCaseAllFiles() == org.lusd1.the_angel_launcher.data.json.CaseType.lower) {
                 file = file.substring(0, file.lastIndexOf(".")).toLowerCase(Locale.ENGLISH)
                     + file.substring(file.lastIndexOf("."));
             }
 
-            this.modsInstalled.add(new com.atlauncher.data.DisableableMod(mod.getName(), mod.getVersion(),
+            this.modsInstalled.add(new org.lusd1.the_angel_launcher.data.DisableableMod(mod.getName(), mod.getVersion(),
                 mod.isOptional(), file, mod.path,
-                com.atlauncher.data.Type.valueOf(com.atlauncher.data.Type.class, mod.getType().toString()),
+                org.lusd1.the_angel_launcher.data.Type.valueOf(org.lusd1.the_angel_launcher.data.Type.class, mod.getType().toString()),
                 this.packVersion.getColour(mod.getColour()), mod.getDescription(), false, false, true, false,
                 mod.getCurseForgeProjectId(), mod.getCurseForgeFileId(), mod.curseForgeProject,
                 mod.curseForgeFile, mod.modrinthProject, mod.modrinthVersion));
@@ -2082,7 +2082,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             // user choosing to not save mods and Minecraft version changed, so delete
             // custom mods
             if (!this.saveMods && !instance.id.equalsIgnoreCase(version.minecraftVersion.id)) {
-                for (com.atlauncher.data.DisableableMod mod : instance.getCustomDisableableMods()) {
+                for (org.lusd1.the_angel_launcher.data.DisableableMod mod : instance.getCustomDisableableMods()) {
                     this.instance.launcher.mods.remove(mod);
                     Utils.delete((mod.isDisabled() ? mod.getDisabledFile(this.instance) : mod.getFile(this.instance)));
                 }
@@ -2695,7 +2695,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
         MojangAssetIndex assetIndex = this.minecraftVersion.assetIndex;
 
-        AssetIndex index = com.atlauncher.network.Download.build().setUrl(assetIndex.url).hash(assetIndex.sha1)
+        AssetIndex index = org.lusd1.the_angel_launcher.network.Download.build().setUrl(assetIndex.url).hash(assetIndex.sha1)
             .size(assetIndex.size).downloadTo(FileSystem.RESOURCES_INDEXES.resolve(assetIndex.id + ".json"))
             .asClass(AssetIndex.class);
 
@@ -2710,7 +2710,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             String filename = object.hash.substring(0, 2) + "/" + object.hash;
             String url = String.format("%s/%s", Constants.MINECRAFT_RESOURCES, filename);
 
-            com.atlauncher.network.Download download = new com.atlauncher.network.Download().setUrl(url)
+            org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download().setUrl(url)
                 .downloadTo(FileSystem.RESOURCES_OBJECTS.resolve(filename)).hash(object.hash).size(object.size)
                 .withInstanceInstaller(this).withHttpClient(httpClient).withFriendlyFileName(key);
 
@@ -2767,7 +2767,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
 
         setTotalBytes(mojangDownload.size);
 
-        com.atlauncher.network.Download.build().setUrl(mojangDownload.url).hash(mojangDownload.sha1)
+        org.lusd1.the_angel_launcher.network.Download.build().setUrl(mojangDownload.url).hash(mojangDownload.sha1)
             .size(mojangDownload.size).downloadTo(getMinecraftJarLibrary().toPath())
             .copyTo(this.isServer ? getMinecraftJar().toPath() : null).withInstanceInstaller(this)
             .withHttpClient(Network.createProgressClient(this)).downloadFile();
@@ -2804,7 +2804,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         LoggingFile loggingFile = this.minecraftVersion.logging.client.file;
         setTotalBytes(loggingFile.size);
 
-        com.atlauncher.network.Download.build().setUrl(loggingFile.url).hash(loggingFile.sha1)
+        org.lusd1.the_angel_launcher.network.Download.build().setUrl(loggingFile.url).hash(loggingFile.sha1)
             .size(loggingFile.size).downloadTo(FileSystem.RESOURCES_LOG_CONFIGS.resolve(loggingFile.id))
             .withInstanceInstaller(this).withHttpClient(Network.createProgressClient(this)).downloadFile();
 
@@ -2875,7 +2875,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         List<Library> libraries = new ArrayList<>();
 
         // Now read in the library jars needed from the pack
-        for (com.atlauncher.data.json.Library library : this.packVersion.getLibraries()) {
+        for (org.lusd1.the_angel_launcher.data.json.Library library : this.packVersion.getLibraries()) {
             if (this.isServer && !library.forServer()) {
                 continue;
             }
@@ -2924,7 +2924,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         this.getLibraries().stream().filter(
                 library -> library.shouldInstall() && library.downloads.artifact != null && !library.hasNativeForOS())
             .forEach(library -> {
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                     .setUrl(library.downloads.artifact.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(library.downloads.artifact.path))
                     .hash(library.downloads.artifact.sha1).size(library.downloads.artifact.size)
@@ -2939,7 +2939,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                     && library.downloads.artifact.url != null && !library.downloads.artifact.url.isEmpty())
                 .forEach(
                     library -> pool
-                        .add(new com.atlauncher.network.Download().setUrl(library.downloads.artifact.url)
+                        .add(new org.lusd1.the_angel_launcher.network.Download().setUrl(library.downloads.artifact.url)
                             .downloadTo(FileSystem.LIBRARIES.resolve(library.downloads.artifact.path))
                             .hash(library.downloads.artifact.sha1).size(library.downloads.artifact.size)
                             .withInstanceInstaller(this).withHttpClient(httpClient)));
@@ -2949,7 +2949,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             this.getLibraries().stream().filter(Library::hasNativeForOS).forEach(library -> {
                 Download download = library.getNativeDownloadForOS();
 
-                pool.add(new com.atlauncher.network.Download().setUrl(download.url)
+                pool.add(new org.lusd1.the_angel_launcher.network.Download().setUrl(download.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(download.path)).hash(download.sha1).size(download.size)
                     .withInstanceInstaller(this).withHttpClient(httpClient));
             });
@@ -2958,7 +2958,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         if (this.multiMCManifest != null) {
             // we only download these, as they do not get loaded into the classpath as they support agents only
             this.getMultiMCLibraries().forEach(library -> {
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                     .setUrl(library.downloads.artifact.url)
                     .downloadTo(FileSystem.LIBRARIES.resolve(library.downloads.artifact.path))
                     .hash(library.downloads.artifact.sha1).size(library.downloads.artifact.size)
@@ -3042,7 +3042,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             JavaRuntime runtimeToDownload = runtimesForSystem.get(minecraftVersion.javaVersion.component).get(0);
 
             try {
-                JavaRuntimeManifest javaRuntimeManifest = com.atlauncher.network.Download.build()
+                JavaRuntimeManifest javaRuntimeManifest = org.lusd1.the_angel_launcher.network.Download.build()
                     .setUrl(runtimeToDownload.manifest.url).size(runtimeToDownload.manifest.size)
                     .hash(runtimeToDownload.manifest.sha1).downloadTo(FileSystem.MINECRAFT_RUNTIMES
                         .resolve(minecraftVersion.javaVersion.component).resolve("manifest.json"))
@@ -3067,7 +3067,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
                 // collect the files we need to download
                 javaRuntimeManifest.files.forEach((key, file) -> {
                     if (file.type == JavaRuntimeManifestFileType.FILE) {
-                        com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                        org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                             .setUrl(file.downloads.raw.url).downloadTo(runtimeDirectory.resolve(key))
                             .hash(file.downloads.raw.sha1).size(file.downloads.raw.size).executable(file.executable)
                             .withInstanceInstaller(this).withHttpClient(httpClient);
@@ -3127,7 +3127,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         DownloadPool pool = new DownloadPool();
 
         this.selectedMods.stream().filter(mod -> mod.download != DownloadType.browser).forEach(mod -> {
-            com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+            org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                 .setUrl(mod.getDownloadUrl()).downloadTo(FileSystem.DOWNLOADS.resolve(mod.getFile()))
                 .size(mod.filesize).withInstanceInstaller(this).withHttpClient(httpClient);
 
@@ -3240,7 +3240,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         DownloadPool pool = new DownloadPool();
 
         technicSolderModsToDownload.stream().forEach(mod -> {
-            com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+            org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                 .setUrl(mod.getDownloadUrl())
                 .downloadTo(FileSystem.TECHNIC_DOWNLOADS
                     .resolve(String.format("%s/%s", technicModpack.name, mod.getFile())))
@@ -3310,7 +3310,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         fireTask(GetText.tr("Installing {0}", "Legacy Java Fixer"));
         fireSubProgressUnknown();
 
-        com.atlauncher.network.Download download = com.atlauncher.network.Download.build()
+        org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build()
             .setUrl(Constants.LEGACY_JAVA_FIXER_URL).hash(Constants.LEGACY_JAVA_FIXER_MD5)
             .downloadTo(FileSystem.DOWNLOADS.resolve("legacyjavafixer-1.0.jar"))
             .copyTo(root.resolve("mods/legacyjavafixer-1.0.jar"));
@@ -3360,7 +3360,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             return;
         }
 
-        for (com.atlauncher.data.json.Action action : this.packVersion.actions) {
+        for (org.lusd1.the_angel_launcher.data.json.Action action : this.packVersion.actions) {
             action.execute(this);
         }
     }
@@ -3424,11 +3424,11 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             fireSubProgressUnknown();
             fireTask(GetText.tr("Calculating Files To Download"));
 
-            List<com.atlauncher.network.Download> filesToDownload = ftbPackVersionManifest.files.parallelStream()
+            List<org.lusd1.the_angel_launcher.network.Download> filesToDownload = ftbPackVersionManifest.files.parallelStream()
                 .filter(f -> f.type != FTBPackVersionManifestFileType.MOD).map(file -> {
                     overridePaths.add(file.getPath() + file.name);
 
-                    com.atlauncher.network.Download download = com.atlauncher.network.Download.build()
+                    org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build()
                         .setUrl(file.url).size((long) file.size).hash(file.sha1).ignoreFailures()
                         .downloadTo(root.resolve(file.getPath() + file.name))
                         .withInstanceInstaller(this).withHttpClient(Network.createProgressClient(this));
@@ -3482,7 +3482,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             File configs = this.temp.resolve("Configs.zip").toFile();
             String path = "packs/" + pack.getSafeName() + "/versions/" + version.version + "/Configs.zip";
 
-            com.atlauncher.network.Download configsDownload = com.atlauncher.network.Download.build()
+            org.lusd1.the_angel_launcher.network.Download configsDownload = org.lusd1.the_angel_launcher.network.Download.build()
                 .setUrl(String.format("%s/%s", Constants.DOWNLOAD_SERVER, path)).downloadTo(configs.toPath())
                 .size(this.packVersion.configs.filesize).hash(this.packVersion.configs.sha1)
                 .withInstanceInstaller(this).withHttpClient(Network.createProgressClient(this));
@@ -3571,7 +3571,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             CurseForgeAttachment attachment = this.pack.curseForgeProject.getLogo().orElse(null);
 
             if (attachment != null) {
-                com.atlauncher.network.Download imageDownload = com.atlauncher.network.Download.build()
+                org.lusd1.the_angel_launcher.network.Download imageDownload = org.lusd1.the_angel_launcher.network.Download.build()
                     .setUrl(attachment.url).downloadTo(root.resolve(isServer ? "server.png" : "instance.png"))
                     .withInstanceInstaller(this)
                     .withHttpClient(Network.createProgressClient(this));
@@ -3582,7 +3582,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
         } else if (this.pack.modrinthProject != null) {
             fireTask(GetText.tr("Downloading Image"));
             if (this.pack.modrinthProject.iconUrl != null) {
-                com.atlauncher.network.Download imageDownload = com.atlauncher.network.Download.build()
+                org.lusd1.the_angel_launcher.network.Download imageDownload = org.lusd1.the_angel_launcher.network.Download.build()
                     .setUrl(this.pack.modrinthProject.iconUrl)
                     .downloadTo(root.resolve(isServer ? "server.png" : "instance.png"))
                     .withInstanceInstaller(this).ignoreFailures()
@@ -3599,7 +3599,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             if (art != null) {
                 // we can't check the provided hash and size here otherwise download fails as
                 // their api doesn't return the correct info
-                com.atlauncher.network.Download imageDownload = com.atlauncher.network.Download.build().setUrl(art.url)
+                org.lusd1.the_angel_launcher.network.Download imageDownload = org.lusd1.the_angel_launcher.network.Download.build().setUrl(art.url)
                     .size(art.size).hash(art.sha1)
                     .downloadTo(root.resolve(isServer ? "server.png" : "instance.png")).ignoreFailures()
                     .withInstanceInstaller(this).withHttpClient(Network.createProgressClient(this));
@@ -3612,7 +3612,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             TechnicModpackAsset logo = this.technicModpack.logo;
 
             if (logo != null && logo.url != null && !logo.url.isEmpty()) {
-                com.atlauncher.network.Download imageDownload = com.atlauncher.network.Download.build().setUrl(logo.url)
+                org.lusd1.the_angel_launcher.network.Download imageDownload = org.lusd1.the_angel_launcher.network.Download.build().setUrl(logo.url)
                     .downloadTo(root.resolve("instance.png")).withInstanceInstaller(this)
                     .ignoreFailures().withHttpClient(Network.createProgressClient(this));
 
@@ -3872,20 +3872,20 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             if (isReinstall) {
                 if (Files.isDirectory(this.root.resolve("mods"))) {
                     Utils.deleteWithFilter(this.root.resolve("mods").toFile(),
-                        instance.getPackMods(com.atlauncher.data.Type.mods), true);
+                        instance.getPackMods(org.lusd1.the_angel_launcher.data.Type.mods), true);
                 }
 
                 if (Files.isDirectory(this.root.resolve("coremods"))) {
                     Utils.deleteWithFilter(this.root.resolve("coremods").toFile(),
-                        instance.getPackMods(com.atlauncher.data.Type.coremods), true);
+                        instance.getPackMods(org.lusd1.the_angel_launcher.data.Type.coremods), true);
                 }
 
                 if (Files.isDirectory(this.root.resolve("jarmods"))) {
                     Utils.deleteWithFilter(this.root.resolve("jarmods").toFile(),
-                        instance.getPackMods(com.atlauncher.data.Type.jar), true);
+                        instance.getPackMods(org.lusd1.the_angel_launcher.data.Type.jar), true);
 
                     Utils.deleteWithFilter(this.root.resolve("jarmods").toFile(),
-                        instance.getPackMods(com.atlauncher.data.Type.forge), true);
+                        instance.getPackMods(org.lusd1.the_angel_launcher.data.Type.forge), true);
                 }
 
                 if (this.instance.launcher.overridePaths != null && !this.instance.launcher.overridePaths.isEmpty()) {
@@ -4126,7 +4126,7 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             String url = ConfigManager.getConfigItem("neoForgeServerStarterJar.url", "");
             String[] parts = url.split("/");
             String downloadsFileName = String.format("ServerStarterJar-%s.jar", parts[parts.length - 2]);
-            com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+            org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                 .setUrl(url)
                 .hash(ConfigManager.getConfigItem("neoForgeServerStarterJar.hash", ""))
                 .size(ConfigManager.getConfigItem("neoForgeServerStarterJar.size", 0.0).longValue())
@@ -4186,12 +4186,12 @@ public class InstanceInstaller extends SwingWorker<Boolean, Void> implements Net
             return this.loader.getServerJar();
         }
 
-        com.atlauncher.data.json.Mod forge = null;
-        com.atlauncher.data.json.Mod mcpc = null;
-        for (com.atlauncher.data.json.Mod mod : this.selectedMods) {
-            if (mod.getType() == com.atlauncher.data.json.ModType.forge) {
+        org.lusd1.the_angel_launcher.data.json.Mod forge = null;
+        org.lusd1.the_angel_launcher.data.json.Mod mcpc = null;
+        for (org.lusd1.the_angel_launcher.data.json.Mod mod : this.selectedMods) {
+            if (mod.getType() == org.lusd1.the_angel_launcher.data.json.ModType.forge) {
                 forge = mod;
-            } else if (mod.getType() == com.atlauncher.data.json.ModType.mcpc) {
+            } else if (mod.getType() == org.lusd1.the_angel_launcher.data.json.ModType.mcpc) {
                 mcpc = mod;
             }
         }

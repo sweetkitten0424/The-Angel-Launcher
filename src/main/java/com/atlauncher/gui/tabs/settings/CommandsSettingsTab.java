@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.Dimension;
 import java.awt.GridBagConstraints;
@@ -28,11 +28,11 @@ import javax.swing.JTextPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.listener.DelayedSavingKeyListener;
-import com.atlauncher.viewmodel.impl.settings.CommandsSettingsViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.listener.DelayedSavingKeyListener;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.CommandsSettingsViewModel;
 
 public class CommandsSettingsTab extends AbstractSettingsTab {
     private final CommandsSettingsViewModel viewModel;

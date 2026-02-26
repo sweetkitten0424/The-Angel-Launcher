@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -44,18 +44,18 @@ import javax.swing.JTextPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.gui.layouts.WrapLayout;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.gui.layouts.WrapLayout;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public final class BrowserDownloadDialog extends JDialog {
     private final List<Mod> browserDownloadMods;

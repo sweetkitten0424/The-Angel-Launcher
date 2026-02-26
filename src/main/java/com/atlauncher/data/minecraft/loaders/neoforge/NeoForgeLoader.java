@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.neoforge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.neoforge;
 
 import java.io.File;
 import java.io.IOException;
@@ -28,22 +28,22 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.ArgumentRule;
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.loaders.Loader;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.graphql.GetNeoForgeLoaderVersionsForMinecraftVersionQuery;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.ArgumentRule;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.graphql.GetNeoForgeLoaderVersionsForMinecraftVersionQuery;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 

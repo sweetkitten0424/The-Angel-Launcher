@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -24,19 +24,19 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.data.LWJGLLibrary;
-import com.atlauncher.data.LWJGLMajorVersion;
-import com.atlauncher.data.LWJGLVersion;
-import com.atlauncher.data.LWJGLVersions;
-import com.atlauncher.data.minecraft.Download;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.MinecraftVersion;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.data.LWJGLLibrary;
+import org.lusd1.the_angel_launcher.data.LWJGLMajorVersion;
+import org.lusd1.the_angel_launcher.data.LWJGLVersion;
+import org.lusd1.the_angel_launcher.data.LWJGLVersions;
+import org.lusd1.the_angel_launcher.data.minecraft.Download;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.MinecraftVersion;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 

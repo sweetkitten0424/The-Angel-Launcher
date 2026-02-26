@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.mockStatic;
@@ -27,7 +27,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 
-import com.atlauncher.utils.javafinder.JavaInfo;
+import org.lusd1.the_angel_launcher.utils.javafinder.JavaInfo;
 
 public class OSTest {
     private List<JavaInfo> installedJavas;

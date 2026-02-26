@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.instances;
+package org.lusd1.the_angel_launcher.gui.tabs.instances;
 
 import java.util.EventObject;
 
-import com.atlauncher.utils.sort.InstanceSortingStrategy;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategy;
 
 public final class InstancesSortEvent extends EventObject {
     private final InstanceSortingStrategy strategy;

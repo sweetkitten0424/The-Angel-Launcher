@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -25,12 +25,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.Server;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;

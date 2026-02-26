@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.json;
+package org.lusd1.the_angel_launcher.data.json;
 
 import java.awt.Color;
 import java.io.File;
@@ -24,20 +24,20 @@ import java.util.List;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.annot.Json;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 import com.google.gson.annotations.SerializedName;
 
 @Json

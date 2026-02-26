@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -42,17 +42,17 @@ import javax.swing.filechooser.FileFilter;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.MojangAPIUtils;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.MojangAPIUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class ChangeSkinDialog extends JDialog {
     private JTextField skinPath;

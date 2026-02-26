@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.constants;
+package org.lusd1.the_angel_launcher.constants;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,10 +23,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.data.LauncherVersion;
-import com.atlauncher.data.ScreenResolution;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.LauncherVersion;
+import org.lusd1.the_angel_launcher.data.ScreenResolution;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 @SuppressWarnings("MutablePublicArray")
 public class Constants {
@@ -56,7 +56,7 @@ public class Constants {
     public static final LauncherVersion VERSION;
     public static final String LAUNCHER_NAME = "ATLauncher";
     public static final String LAUNCHER_WEBSITE = "https://atlauncher.com";
-    public static final String DEFAULT_THEME_CLASS = "com.atlauncher.themes.Dark";
+    public static final String DEFAULT_THEME_CLASS = "org.lusd1.the_angel_launcher.themes.Dark";
     public static final String GA_TRACKING_ID = "UA-88820616-7";
     public static final String CROWDIN_URL = "https://crowdin.com/project/atlauncher";
     public static final String SENTRY_DSN = "https://499c3bbc55cb434dad42a3ac670e2c91@sentry.io/1498519";

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.managers;
+package org.lusd1.the_angel_launcher.managers;
 
 import java.util.Comparator;
 import java.util.Map;
@@ -23,11 +23,11 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
 
 import io.reactivex.rxjava3.core.Observable;
 import io.reactivex.rxjava3.subjects.BehaviorSubject;

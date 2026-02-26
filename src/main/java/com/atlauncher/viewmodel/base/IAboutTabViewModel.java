@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.base;
+package org.lusd1.the_angel_launcher.viewmodel.base;
 
 import java.util.List;
 
 import javax.annotation.Nonnull;
 
-import com.atlauncher.data.Contributor;
+import org.lusd1.the_angel_launcher.data.Contributor;
 
 import io.reactivex.rxjava3.core.Observable;
 

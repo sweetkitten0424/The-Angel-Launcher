@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -42,18 +42,18 @@ import javax.swing.filechooser.FileFilter;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.dbus.DBusUtils;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ImportPackUtils;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.dbus.DBusUtils;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ImportPackUtils;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class ImportInstanceDialog extends JDialog {
 

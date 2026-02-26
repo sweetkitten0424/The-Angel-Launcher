@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.util.Optional;
 
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.BackgroundImageWorker;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.BackgroundImageWorker;
 
 public final class BackgroundImageLabel extends JLabel {
     public BackgroundImageLabel(String url, int width, int height) {

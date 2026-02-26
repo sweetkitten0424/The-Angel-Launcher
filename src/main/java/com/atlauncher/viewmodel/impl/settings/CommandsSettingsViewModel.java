@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
 import java.util.Optional;
 
-import com.atlauncher.App;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.gui.tabs.settings.CommandsSettingsTab;
-import com.atlauncher.managers.SettingsValidityManager;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.CommandsSettingsTab;
+import org.lusd1.the_angel_launcher.managers.SettingsValidityManager;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

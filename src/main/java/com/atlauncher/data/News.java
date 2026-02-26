@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import com.atlauncher.App;
-import com.atlauncher.annot.Json;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 import com.google.gson.annotations.SerializedName;
 
 /**

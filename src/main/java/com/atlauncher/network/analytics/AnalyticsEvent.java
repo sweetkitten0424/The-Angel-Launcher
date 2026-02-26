@@ -15,27 +15,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network.analytics;
+package org.lusd1.the_angel_launcher.network.analytics;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-import com.atlauncher.data.BackupMode;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.PackVersion;
-import com.atlauncher.data.Server;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.ftb.FTBPackManifest;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthSearchHit;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.technic.TechnicModpackSlim;
-import com.atlauncher.graphql.fragment.UnifiedModPackResultsFragment;
+import org.lusd1.the_angel_launcher.data.BackupMode;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.PackVersion;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.ftb.FTBPackManifest;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSearchHit;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.technic.TechnicModpackSlim;
+import org.lusd1.the_angel_launcher.graphql.fragment.UnifiedModPackResultsFragment;
 
 public class AnalyticsEvent {
     public String name;

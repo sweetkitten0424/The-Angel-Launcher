@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.settings;
+package org.lusd1.the_angel_launcher.gui.tabs.settings;
 
 import java.awt.GridBagConstraints;
 import java.awt.event.ItemEvent;
@@ -25,15 +25,15 @@ import javax.swing.JComboBox;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.AddModRestriction;
-import com.atlauncher.data.InstanceExportFormat;
-import com.atlauncher.data.ModPlatform;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.viewmodel.impl.settings.ModsSettingsViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.AddModRestriction;
+import org.lusd1.the_angel_launcher.data.InstanceExportFormat;
+import org.lusd1.the_angel_launcher.data.ModPlatform;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.viewmodel.impl.settings.ModsSettingsViewModel;
 
 public class ModsSettingsTab extends AbstractSettingsTab {
     private final ModsSettingsViewModel viewModel;

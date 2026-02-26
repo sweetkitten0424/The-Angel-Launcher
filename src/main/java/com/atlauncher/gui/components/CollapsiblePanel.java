@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -42,20 +42,20 @@ import javax.swing.UIManager;
 import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.Server;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.listener.ThemeListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.evnt.manager.ThemeManager;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.managers.ServerManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.listener.ThemeListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.evnt.manager.ThemeManager;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.managers.ServerManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 /**
  * The user-triggered collapsible panel containing the component (trigger) in the titled border

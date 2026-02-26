@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
@@ -31,7 +31,7 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import com.atlauncher.App;
+import org.lusd1.the_angel_launcher.App;
 
 public class FileTypeDialog extends JDialog {
 

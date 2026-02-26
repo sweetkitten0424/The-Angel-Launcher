@@ -1,6 +1,6 @@
 /*
- * ATLauncher - https://github.com/ATLauncher/ATLauncher
- * Copyright (C) 2013-2022 ATLauncher
+ * The-Angel-Launcher - https://github.com/The-Angel-Launcher/The-Angel-Launcher
+ * Copyright (C) 2013-2022 The-Angel-Launcher
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -33,10 +33,10 @@ import org.mockserver.model.BinaryBody;
 import org.mockserver.model.HttpRequest;
 import org.mockserver.model.HttpResponse;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.DownloadableFile;
-import com.atlauncher.utils.Hashing;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.DownloadableFile;
+import org.lusd1.the_angel_launcher.utils.Hashing;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 

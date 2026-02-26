@@ -1,6 +1,6 @@
 /*
- * ATLauncher - https://github.com/ATLauncher/ATLauncher
- * Copyright (C) 2013-2022 ATLauncher
+ * The-Angel-Launcher - https://github.com/The-Angel-Launcher/The-Angel-Launcher
+ * Copyright (C) 2013-2022 The-Angel-Launcher
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,9 +40,9 @@ import org.mockserver.logging.MockServerLogger;
 import org.mockserver.socket.PortFactory;
 import org.mockserver.socket.tls.KeyStoreFactory;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
 
 import ui.mocks.MockHelper;
 

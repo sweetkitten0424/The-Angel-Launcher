@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl;
+package org.lusd1.the_angel_launcher.viewmodel.impl;
 
 import java.util.Comparator;
 import java.util.List;
@@ -26,9 +26,9 @@ import java.util.stream.Collectors;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.data.Server;
-import com.atlauncher.managers.ServerManager;
-import com.atlauncher.viewmodel.base.IServersTabViewModel;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.managers.ServerManager;
+import org.lusd1.the_angel_launcher.viewmodel.base.IServersTabViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.BackpressureStrategy;

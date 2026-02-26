@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl;
+package org.lusd1.the_angel_launcher.viewmodel.impl;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.atlauncher.data.AbstractNews;
-import com.atlauncher.managers.NewsManager;
-import com.atlauncher.viewmodel.base.INewsViewModel;
+import org.lusd1.the_angel_launcher.data.AbstractNews;
+import org.lusd1.the_angel_launcher.managers.NewsManager;
+import org.lusd1.the_angel_launcher.viewmodel.base.INewsViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

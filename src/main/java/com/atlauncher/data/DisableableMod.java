@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.awt.Color;
 import java.awt.Window;
@@ -34,27 +34,27 @@ import java.util.stream.Stream;
 import org.joda.time.format.ISODateTimeFormat;
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.gui.dialogs.CurseForgeProjectFileSelectorDialog;
-import com.atlauncher.gui.dialogs.ModrinthVersionSelectorDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.gui.dialogs.CurseForgeProjectFileSelectorDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ModrinthVersionSelectorDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.gson.annotations.SerializedName;
 
 public class DisableableMod implements Serializable {
@@ -574,7 +574,7 @@ public class DisableableMod implements Serializable {
         return true;
     }
 
-    public static DisableableMod generateMod(File file, com.atlauncher.data.Type type, boolean enabled) {
+    public static DisableableMod generateMod(File file, org.lusd1.the_angel_launcher.data.Type type, boolean enabled) {
         DisableableMod mod = new DisableableMod();
         mod.disabled = !enabled;
         mod.userAdded = true;

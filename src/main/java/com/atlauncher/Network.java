@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
 import java.io.IOException;
 import java.security.cert.CertificateException;
@@ -32,15 +32,15 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 import com.apollographql.apollo.ApolloClientAwarenessInterceptor;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.interfaces.NetworkProgressable;
-import com.atlauncher.listener.ProgressListener;
-import com.atlauncher.network.DebugLoggingInterceptor;
-import com.atlauncher.network.ErrorReportingInterceptor;
-import com.atlauncher.network.UserAgentInterceptor;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.ProgressResponseBody;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.interfaces.NetworkProgressable;
+import org.lusd1.the_angel_launcher.listener.ProgressListener;
+import org.lusd1.the_angel_launcher.network.DebugLoggingInterceptor;
+import org.lusd1.the_angel_launcher.network.ErrorReportingInterceptor;
+import org.lusd1.the_angel_launcher.network.UserAgentInterceptor;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.ProgressResponseBody;
 
 import okhttp3.Cache;
 import okhttp3.OkHttpClient;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -41,7 +41,7 @@ import org.apache.commons.compress.utils.IOUtils;
 import org.zeroturnaround.zip.NameMapper;
 import org.zeroturnaround.zip.ZipUtil;
 
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 
 public class ArchiveUtils {
     public static boolean archiveContainsFile(Path archivePath, String file) {

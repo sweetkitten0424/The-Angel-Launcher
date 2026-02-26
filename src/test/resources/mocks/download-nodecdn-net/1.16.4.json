@@ -126,13 +126,13 @@
     {
       "downloads": {
         "artifact": {
-          "path": "com/atlauncher/test/1.0/test-1.0.jar",
+          "path": "org/lusd1/the_angel_launcher/test/1.0/test-1.0.jar",
           "sha1": "ef28203c29fe08638c2e685286427f00a4791962",
           "size": 313,
-          "url": "https://libraries.minecraft.net/com/atlauncher/test/1.0/test-1.0.jar"
+          "url": "https://libraries.minecraft.net/org/lusd1/the_angel_launcher/test/1.0/test-1.0.jar"
         }
       },
-      "name": "com.atlauncher:test:1.0"
+      "name": "org.lusd1.the_angel_launcher:test:1.0"
     }
   ],
   "logging": {

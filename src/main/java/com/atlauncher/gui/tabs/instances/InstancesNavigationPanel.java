@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.instances;
+package org.lusd1.the_angel_launcher.gui.tabs.instances;
 
 import java.awt.Dimension;
 import java.awt.event.ItemEvent;
@@ -30,14 +30,14 @@ import javax.swing.JPanel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.gui.dialogs.ImportInstanceDialog;
-import com.atlauncher.gui.tabs.InstancesTab;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
-import com.atlauncher.utils.sort.InstanceSortingStrategy;
-import com.atlauncher.viewmodel.base.IInstancesTabViewModel;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.gui.dialogs.ImportInstanceDialog;
+import org.lusd1.the_angel_launcher.gui.tabs.InstancesTab;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategy;
+import org.lusd1.the_angel_launcher.viewmodel.base.IInstancesTabViewModel;
 
 public final class InstancesNavigationPanel extends JPanel implements RelocalizationListener {
     private final IInstancesTabViewModel viewModel;

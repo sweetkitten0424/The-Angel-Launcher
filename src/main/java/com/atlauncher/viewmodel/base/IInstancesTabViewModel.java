@@ -1,6 +1,6 @@
 /*
- * ATLauncher - https://github.com/ATLauncher/ATLauncher
- * Copyright (C) 2013-2022 ATLauncher
+ * The-Angel-Launcher - https://github.com/The-Angel-Launcher/The-Angel-Launcher
+ * Copyright (C) 2013-2022 The-Angel-Launcher
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.base;
+package org.lusd1.the_angel_launcher.viewmodel.base;
 
 import java.util.List;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.atlauncher.gui.models.InstanceUIModel;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.gui.models.InstanceUIModel;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
 
 import io.reactivex.rxjava3.core.Flowable;
 import io.reactivex.rxjava3.core.Observable;

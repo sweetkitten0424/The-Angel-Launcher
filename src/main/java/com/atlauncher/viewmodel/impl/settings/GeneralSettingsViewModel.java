@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
 import java.awt.Dimension;
 import java.awt.Point;
@@ -31,23 +31,23 @@ import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.CheckState;
-import com.atlauncher.data.Language;
-import com.atlauncher.data.LauncherTheme;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.evnt.manager.ThemeManager;
-import com.atlauncher.gui.tabs.settings.GeneralSettingsTab;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.SettingsValidityManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.sort.InstanceSortingStrategies;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.CheckState;
+import org.lusd1.the_angel_launcher.data.Language;
+import org.lusd1.the_angel_launcher.data.LauncherTheme;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.evnt.manager.ThemeManager;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.GeneralSettingsTab;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.SettingsValidityManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.sort.InstanceSortingStrategies;
 import com.formdev.flatlaf.FlatLaf;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
@@ -161,18 +161,18 @@ public class GeneralSettingsViewModel implements SettingsListener {
     public List<LauncherTheme> getThemes() {
         if (themes == null)
             themes = Arrays.asList(
-                    new LauncherTheme("com.atlauncher.themes.Dark", "ATLauncher Dark (default)"),
-                    new LauncherTheme("com.atlauncher.themes.Light", "ATLauncher Light"),
-                    new LauncherTheme("com.atlauncher.themes.MonokaiPro", "Monokai Pro"),
-                    new LauncherTheme("com.atlauncher.themes.DraculaContrast", "Dracula Contrast"),
-                    new LauncherTheme("com.atlauncher.themes.HiberbeeDark", "Hiberbee Dark"),
-                    new LauncherTheme("com.atlauncher.themes.Vuesion", "Vuesion"),
-                    new LauncherTheme("com.atlauncher.themes.MaterialPalenightContrast", "Material Palenight Contrast"),
-                    new LauncherTheme("com.atlauncher.themes.ArcOrange", "Arc Orange"),
-                    new LauncherTheme("com.atlauncher.themes.CyanLight", "Cyan Light"),
-                    new LauncherTheme("com.atlauncher.themes.HighTechDarkness", "High Tech Darkness"),
-                    new LauncherTheme("com.atlauncher.themes.OneDark", "One Dark"),
-                    new LauncherTheme("com.atlauncher.themes.Tokyonight", "TokyoNight"));
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Dark", "ATLauncher Dark (default)"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Light", "ATLauncher Light"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.MonokaiPro", "Monokai Pro"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.DraculaContrast", "Dracula Contrast"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.HiberbeeDark", "Hiberbee Dark"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Vuesion", "Vuesion"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.MaterialPalenightContrast", "Material Palenight Contrast"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.ArcOrange", "Arc Orange"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.CyanLight", "Cyan Light"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.HighTechDarkness", "High Tech Darkness"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.OneDark", "One Dark"),
+                    new LauncherTheme("org.lusd1.the_angel_launcher.themes.Tokyonight", "TokyoNight"));
         return themes;
     }
 

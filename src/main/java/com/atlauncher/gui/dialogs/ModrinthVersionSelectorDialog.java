@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -39,29 +39,29 @@ import javax.swing.JScrollPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.AddModRestriction;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.ModManagement;
-import com.atlauncher.data.Server;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthDependency;
-import com.atlauncher.data.modrinth.ModrinthDependencyType;
-import com.atlauncher.data.modrinth.ModrinthFile;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthProjectType;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.gui.card.ModrinthProjectDependencyCard;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.AddModRestriction;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.ModManagement;
+import org.lusd1.the_angel_launcher.data.Server;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthDependency;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthDependencyType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthFile;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProjectType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.gui.card.ModrinthProjectDependencyCard;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class ModrinthVersionSelectorDialog extends JDialog {
     private int versionsLength = 0;

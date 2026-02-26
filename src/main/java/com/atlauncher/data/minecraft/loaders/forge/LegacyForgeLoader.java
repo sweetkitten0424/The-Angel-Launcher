@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.forge;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.forge;
 
 import java.io.File;
 import java.nio.file.Path;
@@ -24,20 +24,20 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.Arguments;
-import com.atlauncher.data.minecraft.Library;
-import com.atlauncher.data.minecraft.loaders.Loader;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.DownloadPool;
-import com.atlauncher.network.NetworkClient;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.Arguments;
+import org.lusd1.the_angel_launcher.data.minecraft.Library;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.Loader;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.DownloadPool;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 
 import okhttp3.CacheControl;
 import okhttp3.OkHttpClient;
@@ -199,7 +199,7 @@ public class LegacyForgeLoader implements Loader {
 
         if (fmlLibraries != null) {
             fmlLibraries.forEach((library) -> {
-                com.atlauncher.network.Download download = new com.atlauncher.network.Download()
+                org.lusd1.the_angel_launcher.network.Download download = new org.lusd1.the_angel_launcher.network.Download()
                         .setUrl(String.format("%s/fmllibs/%s", Constants.DOWNLOAD_SERVER, library.name))
                         .downloadTo(FileSystem.LIBRARIES.resolve("fmllib/" + library.name))
                         .copyTo(instanceInstaller.root.resolve("lib/" + library.name)).hash(library.sha1Hash)

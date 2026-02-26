@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -34,19 +34,19 @@ import java.util.stream.Collectors;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.atlauncher.App;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthCategory;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthProjectType;
-import com.atlauncher.data.modrinth.ModrinthSearchResult;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthCategory;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProjectType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthSearchResult;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 import com.google.gson.reflect.TypeToken;
 
 import okhttp3.CacheControl;

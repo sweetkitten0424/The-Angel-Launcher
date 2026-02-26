@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders;
 
-import com.atlauncher.annot.Json;
+import org.lusd1.the_angel_launcher.annot.Json;
 import com.google.gson.annotations.SerializedName;
 
 @Json

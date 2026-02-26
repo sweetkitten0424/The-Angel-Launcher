@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.instances;
+package org.lusd1.the_angel_launcher.gui.tabs.instances;
 
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -23,14 +23,14 @@ import java.util.stream.Collectors;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.gui.card.InstanceCard;
-import com.atlauncher.gui.card.NilCard;
-import com.atlauncher.gui.panels.HierarchyPanel;
-import com.atlauncher.gui.tabs.InstancesTab;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.viewmodel.base.IInstancesTabViewModel;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.gui.card.InstanceCard;
+import org.lusd1.the_angel_launcher.gui.card.NilCard;
+import org.lusd1.the_angel_launcher.gui.panels.HierarchyPanel;
+import org.lusd1.the_angel_launcher.gui.tabs.InstancesTab;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.viewmodel.base.IInstancesTabViewModel;
 import com.google.common.collect.Lists;
 
 public final class InstancesListPanel extends HierarchyPanel {

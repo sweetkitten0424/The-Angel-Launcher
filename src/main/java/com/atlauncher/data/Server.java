@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -55,47 +55,47 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.annot.Json;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeFileHash;
-import com.atlauncher.data.curseforge.CurseForgeFingerprint;
-import com.atlauncher.data.curseforge.CurseForgeFingerprintedMod;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.JavaRuntime;
-import com.atlauncher.data.minecraft.JavaRuntimes;
-import com.atlauncher.data.minecraft.JavaVersion;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.data.modrinth.ModrinthFile;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthProjectType;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.exceptions.InvalidPack;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.ArchiveUtils;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFileHash;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprint;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprintedMod;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntime;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntimes;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthFile;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProjectType;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.exceptions.InvalidPack;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.ArchiveUtils;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.google.gson.JsonIOException;
 
 import io.github.asyncronous.toast.Toaster;
@@ -926,7 +926,7 @@ public class Server implements ModManagement {
 
             FileUtils.copyFile(downloadLocation, finalLocation, true);
         } else {
-            com.atlauncher.network.Download download = com.atlauncher.network.Download.build().setUrl(file.downloadUrl)
+            org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build().setUrl(file.downloadUrl)
                 .downloadTo(downloadLocation).size(file.fileLength)
                 .withHttpClient(Network.createProgressClient(dialog));
 
@@ -985,7 +985,7 @@ public class Server implements ModManagement {
         }
 
         // add this mod to the instance (if not a world)
-        if (dm.type != com.atlauncher.data.Type.worlds) {
+        if (dm.type != org.lusd1.the_angel_launcher.data.Type.worlds) {
             mods.add(dm);
             this.save();
         }
@@ -1006,7 +1006,7 @@ public class Server implements ModManagement {
         Path finalLocation = isMod
             ? this.getRoot().resolve("mods").resolve(fileToDownload.filename)
             : this.getRoot().resolve("plugins").resolve(fileToDownload.filename);
-        com.atlauncher.network.Download download = com.atlauncher.network.Download.build().setUrl(fileToDownload.url)
+        org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build().setUrl(fileToDownload.url)
             .downloadTo(downloadLocation).copyTo(finalLocation)
             .withHttpClient(Network.createProgressClient(dialog));
 
@@ -1101,8 +1101,8 @@ public class Server implements ModManagement {
                 continue;
             }
 
-            com.atlauncher.data.Type fileType = path.equals(ROOT.resolve("plugins")) ? com.atlauncher.data.Type.plugins
-                : com.atlauncher.data.Type.mods;
+            org.lusd1.the_angel_launcher.data.Type fileType = path.equals(ROOT.resolve("plugins")) ? org.lusd1.the_angel_launcher.data.Type.plugins
+                : org.lusd1.the_angel_launcher.data.Type.mods;
 
             try (Stream<Path> stream = Files.list(path)) {
                 files.addAll(stream
@@ -1123,9 +1123,9 @@ public class Server implements ModManagement {
             progressDialog.addThread(new Thread(() -> {
                 List<DisableableMod> allMods = files.parallelStream()
                     .map(file -> {
-                        com.atlauncher.data.Type fileType = file.getParent().equals(ROOT.resolve("plugins"))
-                            ? com.atlauncher.data.Type.plugins
-                            : com.atlauncher.data.Type.mods;
+                        org.lusd1.the_angel_launcher.data.Type fileType = file.getParent().equals(ROOT.resolve("plugins"))
+                            ? org.lusd1.the_angel_launcher.data.Type.plugins
+                            : org.lusd1.the_angel_launcher.data.Type.mods;
 
                         return DisableableMod.generateMod(file.toFile(), fileType,
                             !file.getParent().equals(ROOT.resolve("disabledmods")));
@@ -1286,7 +1286,7 @@ public class Server implements ModManagement {
 
         // next remove any mods that the no longer exist in the filesystem
         List<DisableableMod> removedMods = mods.parallelStream().filter(mod -> {
-            if (!mod.wasSelected || mod.skipped || mod.type != com.atlauncher.data.Type.mods) {
+            if (!mod.wasSelected || mod.skipped || mod.type != org.lusd1.the_angel_launcher.data.Type.mods) {
                 return false;
             }
 
@@ -1309,7 +1309,7 @@ public class Server implements ModManagement {
         Set<File> seenModFiles = new HashSet<>();
         List<DisableableMod> duplicateMods = mods.stream()
             .filter(mod -> {
-                if (!mod.wasSelected || mod.skipped || mod.type != com.atlauncher.data.Type.mods) {
+                if (!mod.wasSelected || mod.skipped || mod.type != org.lusd1.the_angel_launcher.data.Type.mods) {
                     return false;
                 }
 

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils.javafinder;
+package org.lusd1.the_angel_launcher.utils.javafinder;
 
 import java.io.IOException;
 import java.lang.ref.SoftReference;
@@ -34,11 +34,11 @@ import java.util.EnumSet;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class JavaFinder {
     private static SoftReference<List<String>> javaPaths = new SoftReference<>(null);

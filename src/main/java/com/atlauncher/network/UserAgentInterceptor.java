@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.io.IOException;
 
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
 
 import okhttp3.Interceptor;
 import okhttp3.Request;

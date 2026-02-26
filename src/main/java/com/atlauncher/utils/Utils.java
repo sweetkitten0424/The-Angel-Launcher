@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.awt.geom.AffineTransform;
 import java.awt.image.AffineTransformOp;
@@ -83,15 +83,15 @@ import org.apache.commons.compress.utils.IOUtils;
 import org.tukaani.xz.LZMAInputStream;
 import org.tukaani.xz.XZInputStream;
 
-import com.atlauncher.App;
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.ExtractRule;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.ExtractRule;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 import com.google.gson.reflect.TypeToken;
 
 import net.iharder.Base64;

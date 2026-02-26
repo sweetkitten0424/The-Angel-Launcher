@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.curseforge;
+package org.lusd1.the_angel_launcher.data.curseforge;
 
 import java.nio.file.Path;
 import java.util.HashMap;
@@ -27,10 +27,10 @@ import java.util.Optional;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.annot.ExcludeFromGsonSerialization;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.json.ModType;
-import com.atlauncher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.annot.ExcludeFromGsonSerialization;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.json.ModType;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
 import com.google.gson.annotations.SerializedName;
 
 public class CurseForgeProject {

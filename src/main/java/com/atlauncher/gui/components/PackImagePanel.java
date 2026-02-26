@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.components;
+package org.lusd1.the_angel_launcher.gui.components;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -24,7 +24,7 @@ import java.awt.Image;
 
 import javax.swing.JPanel;
 
-import com.atlauncher.data.Pack;
+import org.lusd1.the_angel_launcher.data.Pack;
 
 public final class PackImagePanel extends JPanel {
     private final Image image;

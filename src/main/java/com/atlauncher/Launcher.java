@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
 import java.awt.Dialog.ModalityType;
 import java.awt.FlowLayout;
@@ -38,38 +38,38 @@ import javax.swing.JLabel;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.DownloadableFile;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.LauncherVersion;
-import com.atlauncher.graphql.AddLauncherLaunchMutation;
-import com.atlauncher.graphql.type.AddLauncherLaunchInput;
-import com.atlauncher.graphql.type.LauncherJavaVersionInput;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.gui.tabs.PacksBrowserTab;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.CurseForgeUpdateManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.FTBUpdateManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LWJGLManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.managers.ModrinthModpackUpdateManager;
-import com.atlauncher.managers.NewsManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.managers.ServerManager;
-import com.atlauncher.managers.TechnicModpackUpdateManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.DownloadPool;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.network.NetworkClient;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.DownloadableFile;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.LauncherVersion;
+import org.lusd1.the_angel_launcher.graphql.AddLauncherLaunchMutation;
+import org.lusd1.the_angel_launcher.graphql.type.AddLauncherLaunchInput;
+import org.lusd1.the_angel_launcher.graphql.type.LauncherJavaVersionInput;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.gui.tabs.PacksBrowserTab;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.CurseForgeUpdateManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.FTBUpdateManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LWJGLManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.managers.ModrinthModpackUpdateManager;
+import org.lusd1.the_angel_launcher.managers.NewsManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.managers.ServerManager;
+import org.lusd1.the_angel_launcher.managers.TechnicModpackUpdateManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.DownloadPool;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
 import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
@@ -190,7 +190,7 @@ public class Launcher {
             ProgressDialog<Boolean> progressDialog = new ProgressDialog<>(GetText.tr("Downloading Launcher Update"), 1,
                 GetText.tr("Downloading Launcher Update"));
             progressDialog.addThread(new Thread(() -> {
-                com.atlauncher.network.Download download = com.atlauncher.network.Download.build()
+                org.lusd1.the_angel_launcher.network.Download download = org.lusd1.the_angel_launcher.network.Download.build()
                     .setUrl(String.format("%s/%s.%s", Constants.DOWNLOAD_SERVER, Constants.LAUNCHER_NAME, toget))
                     .withHttpClient(Network.createProgressClient(progressDialog)).downloadTo(newFile.toPath());
 
@@ -229,7 +229,7 @@ public class Launcher {
         arguments.add(path);
         arguments.add("-cp");
         arguments.add(temporaryUpdatePath);
-        arguments.add("com.atlauncher.Update");
+        arguments.add("org.lusd1.the_angel_launcher.Update");
         arguments.add(currentPath);
         arguments.add(temporaryUpdatePath);
 
@@ -254,7 +254,7 @@ public class Launcher {
     /**
      * This checks the servers files.json file and gets the files that the Launcher needs to have
      */
-    private List<com.atlauncher.network.Download> getLauncherFiles() {
+    private List<org.lusd1.the_angel_launcher.network.Download> getLauncherFiles() {
         if (this.launcherFiles == null) {
             java.lang.reflect.Type type = new TypeToken<List<DownloadableFile>>() {
             }.getType();
@@ -312,13 +312,13 @@ public class Launcher {
      */
     public boolean hasUpdatedFiles() {
         LogManager.info("Checking for updated files!");
-        List<com.atlauncher.network.Download> downloads = getLauncherFiles();
+        List<org.lusd1.the_angel_launcher.network.Download> downloads = getLauncherFiles();
 
         if (downloads == null) {
             return false;
         }
 
-        return downloads.stream().anyMatch(com.atlauncher.network.Download::needToDownload);
+        return downloads.stream().anyMatch(org.lusd1.the_angel_launcher.network.Download::needToDownload);
     }
 
     public void checkForExternalPackUpdates() {

@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import javax.swing.SwingUtilities;
 
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class DialogException extends Exception {
     private DialogManager dialog;

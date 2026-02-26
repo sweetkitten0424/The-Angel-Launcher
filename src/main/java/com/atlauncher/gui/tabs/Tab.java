@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs;
+package org.lusd1.the_angel_launcher.gui.tabs;
 
 /**
  * Defines a tab that will display at the end of the UI

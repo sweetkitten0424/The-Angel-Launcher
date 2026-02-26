@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -36,11 +36,11 @@ import javax.swing.JTextField;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.gui.card.ModCard;
-import com.atlauncher.network.Analytics;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.gui.card.ModCard;
+import org.lusd1.the_angel_launcher.network.Analytics;
 
 public final class ViewModsDialog extends JDialog {
     private final JPanel contentPanel = new JPanel(new GridBagLayout());

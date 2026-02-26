@@ -38,7 +38,7 @@ apply plugin: 'net.ltgt.errorprone'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
-group = 'com.atlauncher'
+group = 'org.lusd1.the_angel_launcher'
 version = rootProject.file('src/main/resources/version').text.trim().replace('.Beta', '')
 
 repositories {
@@ -112,7 +112,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'com.atlauncher.App'
+    mainClass = 'org.lusd1.the_angel_launcher.App'
     applicationDefaultJvmArgs = [
         "-Djna.nosys=true",
         "-Djava.net.preferIPv4Stack=true",
@@ -179,8 +179,8 @@ jar {
             'SplashScreen-Image': '/assets/image/splash-screen.png',
             'Implementation-Title': project.name,
             'Implementation-Version': archiveVersion,
-            'Implementation-Vender': 'ATLauncher',
-            'Main-Class': 'com.atlauncher.App',
+            'Implementation-Vender': 'The-Angel-Launcher',
+            'Main-Class': 'org.lusd1.the_angel_launcher.App',
             'Multi-Release': 'true'
         )
     }
@@ -191,22 +191,22 @@ apollo {
         "ID"      : "java.lang.String",
         "DateTime": "java.util.Date"
     ]
-    packageName = "com.atlauncher.graphql"
+    packageName = "org.lusd1.the_angel_launcher.graphql"
 }
 
 gettext {
     translations {
         srcDir = 'src'
-        include = 'main/java/com/atlauncher/**/*.java'
+        include = 'main/java/org/lusd1/the_angel_launcher/**/*.java'
         excludes = [
-            'main/java/com/atlauncher/adapter/**/*.java',
-            'main/java/com/atlauncher/annot/**/*.java',
-            'main/java/com/atlauncher/collection/**/*.java',
-            'main/java/com/atlauncher/evnt/**/*.java',
-            'main/java/com/atlauncher/exceptions/**/*.java',
-            'main/java/com/atlauncher/interfaces/**/*.java',
-            'main/java/com/atlauncher/listener/**/*.java',
-            'main/java/com/atlauncher/utils/**/*.java'
+            'main/java/org/lusd1/the_angel_launcher/adapter/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/annot/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/collection/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/evnt/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/exceptions/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/interfaces/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/listener/**/*.java',
+            'main/java/org/lusd1/the_angel_launcher/utils/**/*.java'
         ]
         commentFormat = ' #. '
         outputFilename = 'translations.pot'
@@ -257,8 +257,8 @@ shadowJar {
 }
 
 macAppBundle {
-    mainClassName = 'com.atlauncher.App'
-    appName = 'ATLauncher'
+    mainClassName = 'org.lusd1.the_angel_launcher.App'
+    appName = 'The-Angel-Launcher'
     appStyle = 'universalJavaApplicationStub'
     runtimeConfigurationName = 'shadow'
     jarTask = 'shadowJar'
@@ -272,10 +272,6 @@ macAppBundle {
     bundleExtras.put("JVMVersion", project.targetCompatibility.toString() + "+")
 }
 
-copyToResourcesJava {
-    rename("ATLauncher-${project.version}.jar", "ATLauncher.jar")
-}
-
 def currentYear() {
     def df = new SimpleDateFormat("yyyy")
     df.setTimeZone(TimeZone.getTimeZone("UTC"))
@@ -283,9 +279,9 @@ def currentYear() {
 }
 
 launch4j {
-    outfile = "ATLauncher-${project.version}.exe"
+    outfile = "The-Angel-Launcher-${project.version}.exe"
     jreMinVersion = "${project.targetCompatibility.toString()}"
-    mainClassName = 'com.atlauncher.App'
+    mainClassName = 'org.lusd1.the_angel_launcher.App'
     icon = "${projectDir}/src/main/resources/assets/image/icon.ico"
     version = "${project.version}"
     textVersion = "${project.version}"
@@ -344,7 +340,7 @@ task generateThirdPartyLibraries {
         output.append("<h2>Build Dependencies</h2>\n")
         // Build dependencies
         buildscript.configurations.classpath.dependencies.each { dep ->
-            output.append("${dep.group}:${dep.name.replace(".gradle.plugin", "")} version ${dep.version}\n")
+            output.append("${dep.group}:${dep.name.replace('.gradle.plugin', '')} version ${dep.version}\n")
         }
 
         output.append("<h2>Application Dependencies</h2>\n")
@@ -361,7 +357,7 @@ task generateThirdPartyLibraries {
 }
 
 copyArtifacts.finalizedBy {
-    println 'ATLauncher has been built. Distribution files are located in the dist directory.'
+    println 'The-Angel-Launcher has been built. Distribution files are located in the dist directory.'
 }
 
 clean.doFirst {

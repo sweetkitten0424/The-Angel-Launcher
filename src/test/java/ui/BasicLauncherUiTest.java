@@ -1,6 +1,6 @@
 /*
- * ATLauncher - https://github.com/ATLauncher/ATLauncher
- * Copyright (C) 2013-2022 ATLauncher
+ * The-Angel-Launcher - https://github.com/The-Angel-Launcher/The-Angel-Launcher
+ * Copyright (C) 2013-2022 The-Angel-Launcher
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -36,7 +36,7 @@ import org.assertj.swing.timing.Timeout;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
-import com.atlauncher.gui.card.InstanceCard;
+import org.lusd1.the_angel_launcher.gui.card.InstanceCard;
 
 import ui.mocks.MockHelper;
 

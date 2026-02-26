@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.instances;
+package org.lusd1.the_angel_launcher.gui.tabs.instances;
 
 import java.awt.Dimension;
 import java.awt.event.KeyEvent;
@@ -25,9 +25,9 @@ import javax.swing.JTextField;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.viewmodel.base.IInstancesTabViewModel;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.viewmodel.base.IInstancesTabViewModel;
 import com.formdev.flatlaf.icons.FlatSearchIcon;
 
 public final class InstancesSearchField extends JTextField implements KeyListener {

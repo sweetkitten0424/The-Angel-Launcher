@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -25,9 +25,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
 
 public final class DownloadPool extends ArrayList<Download> {
     private final boolean wait;

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -33,9 +33,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.jar.JarFile;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 import com.google.common.hash.HashCode;
 import com.google.gson.JsonIOException;
 import com.google.gson.reflect.TypeToken;

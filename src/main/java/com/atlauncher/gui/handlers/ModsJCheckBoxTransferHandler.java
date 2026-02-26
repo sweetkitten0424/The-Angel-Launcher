@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.handlers;
+package org.lusd1.the_angel_launcher.gui.handlers;
 
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
@@ -33,26 +33,26 @@ import javax.swing.TransferHandler;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.data.ModPlatform;
-import com.atlauncher.data.Type;
-import com.atlauncher.data.curseforge.CurseForgeFingerprint;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.minecraft.FabricMod;
-import com.atlauncher.data.minecraft.MCMod;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.gui.dialogs.EditModsDialog;
-import com.atlauncher.gui.dialogs.FileTypeDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.CurseForgeApi;
-import com.atlauncher.utils.Hashing;
-import com.atlauncher.utils.ModrinthApi;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.data.ModPlatform;
+import org.lusd1.the_angel_launcher.data.Type;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFingerprint;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.minecraft.FabricMod;
+import org.lusd1.the_angel_launcher.data.minecraft.MCMod;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.gui.dialogs.EditModsDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.FileTypeDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.CurseForgeApi;
+import org.lusd1.the_angel_launcher.utils.Hashing;
+import org.lusd1.the_angel_launcher.utils.ModrinthApi;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class ModsJCheckBoxTransferHandler extends TransferHandler {
     private final EditModsDialog dialog;

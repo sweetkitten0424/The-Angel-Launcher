@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.models;
+package org.lusd1.the_angel_launcher.gui.models;
 
-import com.atlauncher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Instance;
 
 /**
  * 2023 / 08 / 15

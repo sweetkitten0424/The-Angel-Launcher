@@ -15,21 +15,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
 import java.net.InetSocketAddress;
 import java.net.Proxy;
 import java.util.Optional;
 
-import com.atlauncher.App;
-import com.atlauncher.Network;
-import com.atlauncher.data.CheckState;
-import com.atlauncher.data.ProxyType;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.gui.tabs.settings.NetworkSettingsTab;
-import com.atlauncher.managers.SettingsValidityManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.data.CheckState;
+import org.lusd1.the_angel_launcher.data.ProxyType;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.NetworkSettingsTab;
+import org.lusd1.the_angel_launcher.managers.SettingsValidityManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

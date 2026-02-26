@@ -15,21 +15,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.data.MicrosoftAccount;
-import com.atlauncher.data.mojang.api.NameHistory;
-import com.atlauncher.data.mojang.api.ProfileResponse;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.DownloadException;
-import com.atlauncher.network.NetworkClient;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.mojang.api.NameHistory;
+import org.lusd1.the_angel_launcher.data.mojang.api.ProfileResponse;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.DownloadException;
+import org.lusd1.the_angel_launcher.network.NetworkClient;
 import com.google.gson.JsonObject;
 import com.google.gson.reflect.TypeToken;
 

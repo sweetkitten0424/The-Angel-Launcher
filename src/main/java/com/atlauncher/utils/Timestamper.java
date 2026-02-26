@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import com.atlauncher.App;
+import org.lusd1.the_angel_launcher.App;
 
 public final class Timestamper {
     private static final SimpleDateFormat format = new SimpleDateFormat(App.settings.dateFormat + " HH:mm:ss a");

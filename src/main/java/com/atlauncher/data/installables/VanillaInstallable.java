@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.installables;
+package org.lusd1.the_angel_launcher.data.installables;
 
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.PackVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.PackVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
 
 public class VanillaInstallable extends ATLauncherFormatInstallable {
     public VanillaInstallable(VersionManifestVersion minecraftVersion, LoaderVersion loaderVersion,

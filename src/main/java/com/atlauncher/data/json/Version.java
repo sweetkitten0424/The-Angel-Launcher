@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.json;
+package org.lusd1.the_angel_launcher.data.json;
 
 import java.awt.Color;
 import java.util.ArrayList;
@@ -25,10 +25,10 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-import com.atlauncher.annot.Json;
-import com.atlauncher.data.DisableableMod;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.workers.InstanceInstaller;
+import org.lusd1.the_angel_launcher.annot.Json;
+import org.lusd1.the_angel_launcher.data.DisableableMod;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.workers.InstanceInstaller;
 import com.google.gson.annotations.SerializedName;
 
 /**

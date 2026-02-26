@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt.listener;
+package org.lusd1.the_angel_launcher.evnt.listener;
 
 public interface TabChangeListener {
     void onTabChange(int tabIndex);

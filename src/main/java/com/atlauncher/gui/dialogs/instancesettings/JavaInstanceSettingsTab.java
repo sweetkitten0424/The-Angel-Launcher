@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs.instancesettings;
+package org.lusd1.the_angel_launcher.gui.dialogs.instancesettings;
 
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -51,19 +51,19 @@ import javax.swing.text.DocumentFilter;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.Data;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.minecraft.JavaRuntime;
-import com.atlauncher.gui.components.JLabelWithHover;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.ComboItem;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.utils.javafinder.JavaInfo;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.Data;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.minecraft.JavaRuntime;
+import org.lusd1.the_angel_launcher.gui.components.JLabelWithHover;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.ComboItem;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.utils.javafinder.JavaInfo;
 import com.formdev.flatlaf.ui.FlatScrollPaneBorder;
 
 public class JavaInstanceSettingsTab extends JPanel {

@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -27,8 +27,8 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JPanel;
 
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public final class ModCard extends JPanel {
     public final Mod mod;

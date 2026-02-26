@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.card;
+package org.lusd1.the_angel_launcher.gui.card;
 
 import java.awt.BorderLayout;
 import java.awt.Cursor;
@@ -38,27 +38,27 @@ import javax.swing.JTextArea;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.BackupMode;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.gui.components.CollapsiblePanel;
-import com.atlauncher.gui.components.DropDownButton;
-import com.atlauncher.gui.components.ImagePanel;
-import com.atlauncher.gui.dialogs.AddModsDialog;
-import com.atlauncher.gui.dialogs.EditModsDialog;
-import com.atlauncher.gui.dialogs.InstanceExportDialog;
-import com.atlauncher.gui.dialogs.InstanceSettingsDialog;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.BackupMode;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.gui.components.CollapsiblePanel;
+import org.lusd1.the_angel_launcher.gui.components.DropDownButton;
+import org.lusd1.the_angel_launcher.gui.components.ImagePanel;
+import org.lusd1.the_angel_launcher.gui.dialogs.AddModsDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.EditModsDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.InstanceExportDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.InstanceSettingsDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 /**
  * <p/>

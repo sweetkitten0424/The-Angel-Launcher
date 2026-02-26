@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.builders;
+package org.lusd1.the_angel_launcher.builders;
 
 import java.awt.Font;
 import java.util.Optional;
 
-import com.atlauncher.App;
-import com.atlauncher.themes.ATLauncherLaf;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.themes.ATLauncherLaf;
 
 public final class HTMLBuilder {
     public boolean center = false;

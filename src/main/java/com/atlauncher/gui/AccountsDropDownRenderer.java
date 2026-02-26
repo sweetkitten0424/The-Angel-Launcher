@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.Component;
 import java.awt.Dimension;
@@ -25,7 +25,7 @@ import javax.swing.JLabel;
 import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 
-import com.atlauncher.data.MicrosoftAccount;
+import org.lusd1.the_angel_launcher.data.MicrosoftAccount;
 
 public class AccountsDropDownRenderer extends JLabel implements ListCellRenderer<MicrosoftAccount> {
     public AccountsDropDownRenderer() {

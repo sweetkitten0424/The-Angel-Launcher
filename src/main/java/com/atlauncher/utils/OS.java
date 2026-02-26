@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.awt.Desktop;
 import java.awt.Dimension;
@@ -48,14 +48,14 @@ import java.util.Optional;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.graphql.type.LauncherInstallMethod;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PerformanceManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.utils.javafinder.JavaInfo;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.graphql.type.LauncherInstallMethod;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PerformanceManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.utils.javafinder.JavaInfo;
 import com.google.common.hash.HashCode;
 
 import oshi.SystemInfo;
@@ -511,7 +511,7 @@ public enum OS {
         arguments.add("-Djna.nosys=true");
         arguments.add("-cp");
         arguments.add(path);
-        arguments.add("com.atlauncher.UpdateBundledJre");
+        arguments.add("org.lusd1.the_angel_launcher.UpdateBundledJre");
         arguments.add(newJrePath.toAbsolutePath().toString());
         arguments.add(FileSystem.JRE.toAbsolutePath().toString());
         arguments.add(path);
@@ -545,7 +545,7 @@ public enum OS {
         arguments.add("-Djna.nosys=true");
         arguments.add("-cp");
         arguments.add(path);
-        arguments.add("com.atlauncher.Restart");
+        arguments.add("org.lusd1.the_angel_launcher.Restart");
 
         // we don't need to know the path to the jar if user is using osx app
         if (!OS.isUsingMacApp()) {

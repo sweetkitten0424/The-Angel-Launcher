@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui;
+package org.lusd1.the_angel_launcher.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Component;
@@ -35,16 +35,16 @@ import javax.swing.JScrollPane;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.ConsoleState;
-import com.atlauncher.evnt.listener.RelocalizationListener;
-import com.atlauncher.evnt.manager.ConsoleStateManager;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.gui.components.Console;
-import com.atlauncher.gui.components.ConsoleBottomBar;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.ConsoleState;
+import org.lusd1.the_angel_launcher.evnt.listener.RelocalizationListener;
+import org.lusd1.the_angel_launcher.evnt.manager.ConsoleStateManager;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.gui.components.Console;
+import org.lusd1.the_angel_launcher.gui.components.ConsoleBottomBar;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class LauncherConsole extends JFrame implements RelocalizationListener {
 

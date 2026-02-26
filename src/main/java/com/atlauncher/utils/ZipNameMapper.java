@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import org.zeroturnaround.zip.NameMapper;
 
-import com.atlauncher.data.BackupMode;
+import org.lusd1.the_angel_launcher.data.BackupMode;
 
 public class ZipNameMapper {
     public static final NameMapper NORMAL_BACKUP = name -> {

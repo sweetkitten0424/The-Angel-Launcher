@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.thread;
+package org.lusd1.the_angel_launcher.thread;
 
 import java.util.concurrent.Callable;
 
-import com.atlauncher.App;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public final class PasteUpload implements Callable<String> {
     @Override

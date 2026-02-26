@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.tabs.tools;
+package org.lusd1.the_angel_launcher.gui.tabs.tools;
 
 import java.io.File;
 import java.net.InetAddress;
@@ -25,18 +25,18 @@ import java.util.Locale;
 import java.util.function.Consumer;
 import java.util.stream.Collectors;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Analytics;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.analytics.AnalyticsEvent;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Analytics;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.analytics.AnalyticsEvent;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class ToolsViewModel implements SettingsListener {
     private Consumer<Boolean> onCanRunNetworkCheckerChanged;

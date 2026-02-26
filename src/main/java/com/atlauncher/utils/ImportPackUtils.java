@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils;
+package org.lusd1.the_angel_launcher.utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -31,23 +31,23 @@ import java.util.regex.Pattern;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.Gsons;
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.data.curseforge.CurseForgeFile;
-import com.atlauncher.data.curseforge.CurseForgeFileHash;
-import com.atlauncher.data.curseforge.CurseForgeProject;
-import com.atlauncher.data.curseforge.pack.CurseForgeManifest;
-import com.atlauncher.data.modrinth.ModrinthProject;
-import com.atlauncher.data.modrinth.ModrinthVersion;
-import com.atlauncher.data.modrinth.pack.ModrinthModpackManifest;
-import com.atlauncher.data.multimc.MultiMCInstanceConfig;
-import com.atlauncher.data.multimc.MultiMCManifest;
-import com.atlauncher.gui.dialogs.InstanceInstallerDialog;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.network.Download;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFile;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeFileHash;
+import org.lusd1.the_angel_launcher.data.curseforge.CurseForgeProject;
+import org.lusd1.the_angel_launcher.data.curseforge.pack.CurseForgeManifest;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthProject;
+import org.lusd1.the_angel_launcher.data.modrinth.ModrinthVersion;
+import org.lusd1.the_angel_launcher.data.modrinth.pack.ModrinthModpackManifest;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCInstanceConfig;
+import org.lusd1.the_angel_launcher.data.multimc.MultiMCManifest;
+import org.lusd1.the_angel_launcher.gui.dialogs.InstanceInstallerDialog;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.network.Download;
 import com.google.gson.JsonSyntaxException;
 
 public class ImportPackUtils {

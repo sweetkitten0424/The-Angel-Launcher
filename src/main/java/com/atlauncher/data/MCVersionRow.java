@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 /**
  * Specifies a row to display in the VanillaPacksTab
  *
- * @see [com.atlauncher.gui.tabs.VanillaPacksTab]
+ * @see [org.lusd1.the_angel_launcher.gui.tabs.VanillaPacksTab]
  */
 public class MCVersionRow {
     public final String id, date, type;

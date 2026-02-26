@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
 import java.awt.Dimension;
 import java.awt.GraphicsEnvironment;
@@ -59,30 +59,30 @@ import javax.swing.text.DefaultEditorKit;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.Instance;
-import com.atlauncher.data.Language;
-import com.atlauncher.data.Pack;
-import com.atlauncher.data.Settings;
-import com.atlauncher.gui.HoverLineBorder;
-import com.atlauncher.gui.LauncherConsole;
-import com.atlauncher.gui.LauncherFrame;
-import com.atlauncher.gui.SplashScreen;
-import com.atlauncher.gui.TrayMenu;
-import com.atlauncher.gui.dialogs.ProgressDialog;
-import com.atlauncher.gui.dialogs.SetupDialog;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.PackManager;
-import com.atlauncher.network.Download;
-import com.atlauncher.network.ErrorReporting;
-import com.atlauncher.themes.ATLauncherLaf;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.OS;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.Instance;
+import org.lusd1.the_angel_launcher.data.Language;
+import org.lusd1.the_angel_launcher.data.Pack;
+import org.lusd1.the_angel_launcher.data.Settings;
+import org.lusd1.the_angel_launcher.gui.HoverLineBorder;
+import org.lusd1.the_angel_launcher.gui.LauncherConsole;
+import org.lusd1.the_angel_launcher.gui.LauncherFrame;
+import org.lusd1.the_angel_launcher.gui.SplashScreen;
+import org.lusd1.the_angel_launcher.gui.TrayMenu;
+import org.lusd1.the_angel_launcher.gui.dialogs.ProgressDialog;
+import org.lusd1.the_angel_launcher.gui.dialogs.SetupDialog;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.PackManager;
+import org.lusd1.the_angel_launcher.network.Download;
+import org.lusd1.the_angel_launcher.network.ErrorReporting;
+import org.lusd1.the_angel_launcher.themes.ATLauncherLaf;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.Utils;
 import com.formdev.flatlaf.extras.FlatInspector;
 import com.formdev.flatlaf.extras.FlatUIDefaultsInspector;
 

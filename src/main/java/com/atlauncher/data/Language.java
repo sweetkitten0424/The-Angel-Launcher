@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -27,10 +27,10 @@ import java.util.Map;
 import org.mini2Dx.gettext.GetText;
 import org.mini2Dx.gettext.PoFile;
 
-import com.atlauncher.App;
-import com.atlauncher.evnt.manager.RelocalizationManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.evnt.manager.RelocalizationManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class Language {
     public final static List<Locale> locales = new ArrayList<>();

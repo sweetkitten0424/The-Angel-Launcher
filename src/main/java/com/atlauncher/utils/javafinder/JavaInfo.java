@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils.javafinder;
+package org.lusd1.the_angel_launcher.utils.javafinder;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -24,9 +24,9 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import com.atlauncher.FileSystem;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public class JavaInfo {
     public String path;

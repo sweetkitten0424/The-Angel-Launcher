@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Optional;
 
-import com.atlauncher.App;
-import com.atlauncher.FileSystem;
-import com.atlauncher.data.BackupMode;
-import com.atlauncher.data.CheckState;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.gui.tabs.settings.BackupsSettingsTab;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.FileSystem;
+import org.lusd1.the_angel_launcher.data.BackupMode;
+import org.lusd1.the_angel_launcher.data.CheckState;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.BackupsSettingsTab;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

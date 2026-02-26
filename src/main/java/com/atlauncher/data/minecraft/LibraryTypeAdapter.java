@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft;
+package org.lusd1.the_angel_launcher.data.minecraft;
 
 import java.lang.reflect.Type;
 
-import com.atlauncher.data.minecraft.loaders.forge.ForgeLibrary;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.forge.ForgeLibrary;
 import com.google.gson.Gson;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonDeserializer;

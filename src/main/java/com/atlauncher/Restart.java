@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher;
+package org.lusd1.the_angel_launcher;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class Restart {
     public static void main(String[] args) {

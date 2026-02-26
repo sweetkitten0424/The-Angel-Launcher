@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.gui.dialogs;
+package org.lusd1.the_angel_launcher.gui.dialogs;
 
 import java.awt.BorderLayout;
 import java.awt.Dialog;
@@ -32,8 +32,8 @@ import javax.swing.JTextArea;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class ModrinthExportOverridesDialog extends JDialog {
     public ModrinthExportOverridesDialog(Dialog parent, String text) {

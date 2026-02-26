@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.utils.walker;
+package org.lusd1.the_angel_launcher.utils.walker;
 
 import java.io.IOException;
 import java.nio.file.FileVisitResult;
@@ -26,10 +26,10 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.List;
 import java.util.Locale;
 
-import com.atlauncher.data.json.CaseType;
-import com.atlauncher.data.json.Mod;
-import com.atlauncher.utils.FileUtils;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.data.json.CaseType;
+import org.lusd1.the_angel_launcher.data.json.Mod;
+import org.lusd1.the_angel_launcher.utils.FileUtils;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 public final class CaseFileVisitor extends SimpleFileVisitor<Path> {
     private final CaseType caseType;

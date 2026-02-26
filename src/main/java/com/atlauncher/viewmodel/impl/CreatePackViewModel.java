@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl;
+package org.lusd1.the_angel_launcher.viewmodel.impl;
 
 import java.awt.Font;
 import java.util.ArrayList;
@@ -42,29 +42,29 @@ import com.apollographql.apollo.ApolloQueryCall;
 import com.apollographql.apollo.api.Response;
 import com.apollographql.apollo.api.cache.http.HttpCachePolicy;
 import com.apollographql.apollo.rx3.Rx3Apollo;
-import com.atlauncher.App;
-import com.atlauncher.constants.UIConstants;
-import com.atlauncher.data.MCVersionRow;
-import com.atlauncher.data.installables.Installable;
-import com.atlauncher.data.installables.VanillaInstallable;
-import com.atlauncher.data.minecraft.VersionManifestVersion;
-import com.atlauncher.data.minecraft.VersionManifestVersionType;
-import com.atlauncher.data.minecraft.loaders.LoaderType;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.exceptions.InvalidMinecraftVersion;
-import com.atlauncher.graphql.GetLoaderVersionsForMinecraftVersionQuery;
-import com.atlauncher.managers.AccountManager;
-import com.atlauncher.managers.ConfigManager;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.managers.InstanceManager;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.managers.MinecraftManager;
-import com.atlauncher.network.GraphqlClient;
-import com.atlauncher.utils.Pair;
-import com.atlauncher.utils.Utils;
-import com.atlauncher.viewmodel.base.ICreatePackViewModel;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.constants.UIConstants;
+import org.lusd1.the_angel_launcher.data.MCVersionRow;
+import org.lusd1.the_angel_launcher.data.installables.Installable;
+import org.lusd1.the_angel_launcher.data.installables.VanillaInstallable;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersion;
+import org.lusd1.the_angel_launcher.data.minecraft.VersionManifestVersionType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderType;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.exceptions.InvalidMinecraftVersion;
+import org.lusd1.the_angel_launcher.graphql.GetLoaderVersionsForMinecraftVersionQuery;
+import org.lusd1.the_angel_launcher.managers.AccountManager;
+import org.lusd1.the_angel_launcher.managers.ConfigManager;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.managers.InstanceManager;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.managers.MinecraftManager;
+import org.lusd1.the_angel_launcher.network.GraphqlClient;
+import org.lusd1.the_angel_launcher.utils.Pair;
+import org.lusd1.the_angel_launcher.utils.Utils;
+import org.lusd1.the_angel_launcher.viewmodel.base.ICreatePackViewModel;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;

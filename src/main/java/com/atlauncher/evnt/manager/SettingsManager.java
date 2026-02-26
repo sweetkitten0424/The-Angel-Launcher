@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.evnt.manager;
+package org.lusd1.the_angel_launcher.evnt.manager;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.SwingUtilities;
 
-import com.atlauncher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
 
 public final class SettingsManager {
     private static final List<SettingsListener> listeners = new ArrayList<>();

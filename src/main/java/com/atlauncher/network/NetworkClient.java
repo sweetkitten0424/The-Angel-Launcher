@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.io.IOException;
 import java.lang.reflect.Type;
 
 import javax.annotation.Nullable;
 
-import com.atlauncher.Gsons;
-import com.atlauncher.Network;
-import com.atlauncher.managers.LogManager;
+import org.lusd1.the_angel_launcher.Gsons;
+import org.lusd1.the_angel_launcher.Network;
+import org.lusd1.the_angel_launcher.managers.LogManager;
 import com.google.gson.reflect.TypeToken;
 
 import okhttp3.CacheControl;

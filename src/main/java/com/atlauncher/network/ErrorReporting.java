@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.network;
+package org.lusd1.the_angel_launcher.network;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.atlauncher.constants.Constants;
-import com.atlauncher.data.minecraft.loaders.LoaderVersion;
-import com.atlauncher.managers.LogManager;
-import com.atlauncher.utils.Java;
-import com.atlauncher.utils.Utils;
+import org.lusd1.the_angel_launcher.constants.Constants;
+import org.lusd1.the_angel_launcher.data.minecraft.loaders.LoaderVersion;
+import org.lusd1.the_angel_launcher.managers.LogManager;
+import org.lusd1.the_angel_launcher.utils.Java;
+import org.lusd1.the_angel_launcher.utils.Utils;
 
 import io.sentry.Breadcrumb;
 import io.sentry.Sentry;

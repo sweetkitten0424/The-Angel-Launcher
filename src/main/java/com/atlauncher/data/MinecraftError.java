@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data;
+package org.lusd1.the_angel_launcher.data;
 
 import org.mini2Dx.gettext.GetText;
 
-import com.atlauncher.builders.HTMLBuilder;
-import com.atlauncher.managers.DialogManager;
-import com.atlauncher.utils.OS;
+import org.lusd1.the_angel_launcher.builders.HTMLBuilder;
+import org.lusd1.the_angel_launcher.managers.DialogManager;
+import org.lusd1.the_angel_launcher.utils.OS;
 
 public class MinecraftError {
     static final int OUT_OF_MEMORY = 1;

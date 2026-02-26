@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.data.minecraft.loaders.fabric;
+package org.lusd1.the_angel_launcher.data.minecraft.loaders.fabric;
 
 public class FabricMetaVersion {
     public FabricMetaLoader loader;

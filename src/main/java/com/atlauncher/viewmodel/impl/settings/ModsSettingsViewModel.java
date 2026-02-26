@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.atlauncher.viewmodel.impl.settings;
+package org.lusd1.the_angel_launcher.viewmodel.impl.settings;
 
-import com.atlauncher.App;
-import com.atlauncher.data.AddModRestriction;
-import com.atlauncher.data.InstanceExportFormat;
-import com.atlauncher.data.ModPlatform;
-import com.atlauncher.evnt.listener.SettingsListener;
-import com.atlauncher.evnt.manager.SettingsManager;
-import com.atlauncher.gui.tabs.settings.ModsSettingsTab;
-import com.atlauncher.repository.base.IModReloadRequiredRepository;
-import com.atlauncher.repository.impl.ModReloadRequiredRepository;
+import org.lusd1.the_angel_launcher.App;
+import org.lusd1.the_angel_launcher.data.AddModRestriction;
+import org.lusd1.the_angel_launcher.data.InstanceExportFormat;
+import org.lusd1.the_angel_launcher.data.ModPlatform;
+import org.lusd1.the_angel_launcher.evnt.listener.SettingsListener;
+import org.lusd1.the_angel_launcher.evnt.manager.SettingsManager;
+import org.lusd1.the_angel_launcher.gui.tabs.settings.ModsSettingsTab;
+import org.lusd1.the_angel_launcher.repository.base.IModReloadRequiredRepository;
+import org.lusd1.the_angel_launcher.repository.impl.ModReloadRequiredRepository;
 import com.gitlab.doomsdayrs.lib.rxswing.schedulers.SwingSchedulers;
 
 import io.reactivex.rxjava3.core.Observable;
